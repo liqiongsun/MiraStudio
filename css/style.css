@@ -62,7 +62,7 @@ nav a {
     background-color 0.3s, border-radius 0.3s;
   }
 a:hover {
-    background-color: #ffffff;
+    
     border-radius: 30px;
  }
  
@@ -77,42 +77,27 @@ a:hover {
  /*---------banner-------------*/
  
  .hero-section{
-    background-color: aquamarine;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    align-items: center;
-    text-align: center;
-    margin-top: 12rem;
-    margin-bottom: 0;
-    max-width: 65%;
+   background-image: url(../img/home-background1.png);
+   width: 63%;
+   height: 22rem;
+   border: 1px solid #FFB400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 12rem;
+}
    
- }
- .banner{
-    width: 100%;
-    position: relative;
- 
- }
  .text-overlay{
     position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%); 
     color: #FFB400;
-    width: 80%;
     text-align: center;
-
- }
- .text-overlay h3{
-
     text-align: center;
     font-weight:lighter;
     font-size: 2rem;
     line-height: 1.5;
-   
  }
-
-
   /*---------portfolio-------------*/
 
 .portfolio{
@@ -220,6 +205,7 @@ footer{
 }
 .title{
     font-size: 2rem;
+    color: #eaf0ff;
 }
 .project-info{
     width: 65%;
@@ -235,9 +221,7 @@ footer{
     border: 1px solid #FFB400;
 }
 .pro-title {
-    padding-top: 5rem;
-  
-    
+    padding-top: 5rem；
 }
 .text {
     padding-left: 7rem;
@@ -297,7 +281,7 @@ footer{
   }
   .info{
     width: 100%;
-    position: relative;
+   
   }
   .p-text{
 
@@ -307,7 +291,7 @@ footer{
 
   }
   .project-text{
-    width: 40%;
+    width: 50%;
     position: absolute;
     font-size: 1.2rem;
     font-weight: 350;
@@ -468,7 +452,7 @@ footer{
   font-size: 1.2rem;
   color: #d08b00;
  }
- .title{
+ .title2{
   font-family: "Scada", sans-serif;
   font-size: 1.6rem;
   color:  #FFB400;

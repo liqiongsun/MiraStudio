@@ -90,15 +90,22 @@ nav a:hover {
 }
    
  .text-overlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     color: #FFB400;
-    text-align: center;
     text-align: center;
     font-weight:lighter;
     font-size: 2rem;
     line-height: 1.5;
     width: 40%;
  }
+ @media screen and (max-width: 1200px) {
+  .text-overlay {
+    font-size: 1.5rem; 
+  }
+}
   /*---------portfolio-------------*/
 
 .portfolio{
@@ -153,9 +160,21 @@ nav a:hover {
 .research-1 a:hover img {
     box-shadow: 0 0 8px 3px rgba(255, 255, 255, 0.4); 
     border-radius: 20px;
- 
+
 }
 
+@media screen and (max-width: 1200px) {
+  .first-row,
+  .secondary-row {
+    flex-direction: row; /* 将图片排成一行 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: center; /* 在水平方向上居中对齐 */
+    gap: 1rem; /* 设置图片之间的间隔 */
+  }
+  .research-1 > div {
+    width: 100%; /* 图片容器占据整个宽度 */
+  }
+}
 
 
   /*--------footer-------------*/
@@ -247,6 +266,16 @@ footer{
     grid-gap: 20px;
     width: 100%;
  }
+ .three-pictures img {
+  border: 1px solid #FFB400;
+  border-radius: 20px;
+ }
+
+ @media screen and (max-width: 768px) {
+  .three-pictures {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
  .m1 {
     margin-bottom: 8rem;
     width: 100%;
@@ -263,7 +292,7 @@ footer{
     margin-top: 2rem;
  }
 
-  /*---------------------language research-------------------*/
+  /*---------------------mountain-------------------*/
   .heroimg{
     margin-top: 5rem;
   }
@@ -402,9 +431,11 @@ footer{
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.5;
+  margin-top: 10rem;
  }
  .me{
-  width: 20%;
+  width: auto;
+  min-width: 200px
   gap: 2rem;
  }
 .intro{
@@ -425,7 +456,7 @@ footer{
   font-weight: 300;
   font-family: "Scada", sans-serif;
   font-style: italic;
-  width: 35%;
+  max-width: 35%;
   line-height: 1.5;
   font-size: 1.5rem;
   text-align: left;
@@ -465,5 +496,28 @@ footer{
  }
  .detail{
   font-size: 1.2rem;
-
  }
+ @media screen and (max-width: 768px) {
+  .resume {
+    flex-direction: column; 
+    align-items: center; 
+  }
+  .intro{
+    flex-direction: column; 
+    align-items: center; 
+  }
+  .left, .right {
+    width: 100%; 
+  }
+}
+@media screen and (max-width: 1200px) {
+  .intro {
+    flex-direction: column; 
+    align-items: center; 
+  }
+  .intro-text {
+    width: 100%; 
+    margin-top: 2rem; 
+    text-align: center;
+  }
+}

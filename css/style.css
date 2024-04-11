@@ -36,17 +36,47 @@ h1{
     letter-spacing: 6px;
     padding: 3rem;
     padding: 3rem;
-    margin: 0;
-    
+    margin: 0;   
 }
 
+.nav-link {
+  display: inline-block;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 50px;
+  padding: 0.5rem 1rem;
+  line-height: 2;
+  text-decoration: none;
+  letter-spacing: 2px;
+  background-color: #FFB400; 
+  border-radius: 30px;
+  transition: background-color 0.4s, border-radius 0.4s,opacity 0.3s;
+}
+
+/* Styling for nav links on hover */
+.nav-link:hover {
+  background-color: #fffcf6;
+  border-radius: 30px;
+  transform:translateY(-2px);
+  opacity: 0.6;
+}
+
+/* Styling for the selected (current page) nav link */
+.nav-link.selected {
+  background-color: #fffcf6;
+  border-radius: 30px;
+}
+.nav-link:active {
+  transition-duration: 0.3s;
+}
 nav {
     display: flex;
     justify-content: center; 
     position: absolute;
     background-color: #FFB400;
     position: relative;
-    padding: 1.5rem; 
+    padding: 1.2rem; 
     width: 100%;
 }
 nav a { 
@@ -63,7 +93,7 @@ nav a {
     border-radius: 30px;
     transition: background-color 0.3s, border-radius 0.3s;
   }
-nav a:hover {
+#nav a:hover {
     background-color: #fffcf6;
     border-radius: 30px;
  }

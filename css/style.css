@@ -68,10 +68,7 @@ nav a:hover {
     border-radius: 30px;
  }
 
- 
-
 #work{
-   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,7 +87,7 @@ nav a:hover {
    justify-content: center;
    padding: 2rem;
    margin-bottom: 1rem;
-   margin-top: 12rem;
+   margin-top: 5rem;
 }
    
  .text-overlay{
@@ -199,10 +196,10 @@ footer{
     text-align: center;
     border-top: 2px solid #FFB400;
 }
-.welcome{
+.welcome,h3{
     color: #FFB400;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   
 }
 .footer-text{
@@ -223,7 +220,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10rem;
+    margin-top: 3rem;
     width: 65%;
     padding: 0;
  }
@@ -278,13 +275,9 @@ footer{
     width: 100%;
  }
  .three-pictures img {
-    border: 1px solid #FFB400;
-    border-radius: 20px;
+  border: 1px solid #FFB400;
+  border-radius: 20px;
  }
- .small-title h3{
-    text-align: left;
-    color: rgb(142, 78, 0);
-}
 
  @media screen and (max-width: 768px) {
   .three-pictures {
@@ -421,6 +414,8 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 5rem;
+  max-width: 65%;
  
  }
  .row-1{
@@ -436,7 +431,7 @@ footer{
   font-size: 2.5rem;
  }
  .Visual-title2{
-  margin-top: 12rem;
+  margin-top: 5rem;
   margin-bottom: 0;
  }
 
@@ -446,7 +441,7 @@ footer{
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.5;
-  margin-top: 10rem;
+  margin-top: 5rem;
  }
  .me{
   width: auto;

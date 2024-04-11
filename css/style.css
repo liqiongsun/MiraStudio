@@ -33,7 +33,7 @@ h1{
     color: #fffcf6;
     font-family: "MonteCarlo", cursive;
     font-size: 4rem;
-    letter-spacing: 5px;
+    letter-spacing: 6px;
     padding: 3rem;
     padding: 3rem;
     margin: 0;
@@ -414,6 +414,8 @@ footer{
   width: 100%;
   padding: 2rem 2rem;
   margin-bottom: 5rem;
+  border-top: 1px solid #d08b00;
+  border-bottom: 1px solid #FFB400;
   
 }
 .intro-text{

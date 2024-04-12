@@ -237,7 +237,7 @@ footer{
     color: #FFB400;
     text-align: center;
     font-size: 1rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: lighter;
     line-height: 1.5;
 }
@@ -304,6 +304,8 @@ footer{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
  }
  .three-pictures img {
   border: 1px solid #FFB400;
@@ -314,6 +316,32 @@ footer{
   .three-pictures {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+/*---------------------processes-------------------*/
+  
+.text-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.process-text{
+  font-size: 1.1rem;
+  color: #eaf0ff;
+  text-align: left;
+  line-height: 1.5;
+}
+.goals-text{
+  flex:50%;
+  align-items: center;
+  border: 1px solid #565656;
+  gap: 10x;
+  margin-top: 2rem;
+  padding: 1.5rem;
+}
+.last-img{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 
@@ -342,7 +370,7 @@ footer{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 65%;
+   
  
   }
   .pro-text{
@@ -384,33 +412,7 @@ footer{
     margin-bottom: 2rem;
     font-weight: 200;
   }
-  /*---------------------processes-------------------*/
   
-  .text-1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-  }
-  .process-text{
-    font-size: 1.1rem;
-    color: #eaf0ff;
-    text-align: left;
-    line-height: 1.5;
-  }
-  .goals-text{
-    width: 50%;
-    align-items: center;
-    border: 1px solid #FFB400;
-    gap: 10x;
-    margin-top: 2rem;
-    padding: 1.5rem;
-  }
-.last-img{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
 .p-img{
     display: flex;
     align-items: center;
@@ -631,4 +633,22 @@ footer{
   .goals-text {
     width:100%;
   }
+  .text-1{
+    width: 100%;
+  }
+  .first-row .secrondary-row{
+    width: 100%;
+  }
+  .title{
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .p-text{
+    width: auto;
+  }
+ .Visual-title{
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+ }
 }

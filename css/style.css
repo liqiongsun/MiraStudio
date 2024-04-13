@@ -130,7 +130,7 @@ nav a {
     font-weight:lighter;
     font-size: 2rem;
     line-height: 1.5;
-    width: 40%;
+    width: 50%;
  }
  @media screen and (max-width: 1200px) {
   .text-overlay {
@@ -317,6 +317,13 @@ footer{
     grid-template-columns: repeat(1, 1fr);
   }
 }
+@media screen and (max-width:1400px) {
+  .project-text{
+    width:100%;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}
 /*---------------------processes-------------------*/
   
 .text-1{
@@ -405,6 +412,15 @@ footer{
     text-align: left;
     line-height: 2;
   }
+  @media screen and (min-width: 500px) and (max-width: 1400px) {
+    .project-text {
+        width: 100%; 
+        white-space: normal; 
+        overflow: hidden; 
+        font-size: 1rem;
+        text-align: center;
+    }
+}
   .process-text2{
     font-size: 1.2rem;
     color: #ffffff;
@@ -453,6 +469,29 @@ footer{
   gap: 2rem;
   margin-bottom: 2rem;
  }
+ @media screen and (max-width: 1400px) {
+  .one-row,
+  .two-row {
+      display: block; 
+      width: 100%; 
+      margin: 10px 10px; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #393937;
+      margin: 10px 10px;
+  }
+  .p-text{
+    width:65%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .p-text{
+    width:65%;
+}
+}
+
+
  /*--------- Chinese work--------*/
  .graphic{
   display: flex;
@@ -483,10 +522,10 @@ footer{
  }
  @media screen and (max-width: 768px) {
   .imges {
-      width: 100%; /* Set the width to 100% of the container */
-      height: auto; /* Maintain aspect ratio */
-      display: block; /* Ensure the image is displayed as a block element */
-      margin: 10px auto; /* Add some margin for better spacing */
+      width: 100%; 
+      height: auto; 
+      display: block; 
+      margin: 10px auto; 
   }
   .row-1,
   .row-2 {
@@ -662,11 +701,27 @@ footer{
     font-size: 1.4rem;
   }
   .p-text{
-    width: auto;
+    width: 80%;
+    padding:1rem ;
   }
  .Visual-title{
   font-size: 1.5rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+ }
+ .pro-text{
+  padding-left: 1rem;
+  padding-right:1rem;
+  padding-bottom: 1rem;
+ }
+ .small-title{
+  font-size: 0.8rem;
+ }
+ 
+ .p1 {
+  width: 80%; 
+  height: auto; 
+  display: block; 
+  margin:10px 10px;
  }
 }

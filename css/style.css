@@ -310,6 +310,11 @@ h4 {
   .three-pictures {
     grid-template-columns: repeat(1, 1fr);
   }
+  .pro-title {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 /*---------------------processes-------------------*/

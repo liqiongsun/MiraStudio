@@ -101,6 +101,12 @@ nav a {
   align-items: center;
   margin: 0 auto;
 }
+.linken {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+}
 /*---------banner-------------*/
 
 .hero-section {

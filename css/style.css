@@ -634,7 +634,7 @@ h4 {
   font-weight: 300;
   font-family: "Scada", sans-serif;
   font-style: italic;
-  width: 35%;
+  width: 25%;
   line-height: 1.5;
   font-size: 1.5rem;
   text-align: left;
@@ -652,7 +652,7 @@ h4 {
 .left {
   color: #dee4f4;
   width: 68%;
-  line-height: 1.5;
+  line-height: 1.8;
   font-weight: 300;
   font-size: 1rem;
 }
@@ -660,17 +660,19 @@ h4 {
   color: #eaf0ff;
   font-weight: 300;
   width: 32%;
-  line-height: 1.5;
+  line-height: 1.8;
   font-size: 1rem;
 }
 .name {
   font-family: "Scada", sans-serif;
   font-size: 1.2rem;
+  font-weight: 500;
   color: #d08b00;
 }
 .title2 {
   font-family: "Scada", sans-serif;
   font-size: 1.6rem;
+  font-weight: bold;
   color: #ffb400;
 }
 .detail {
@@ -733,6 +735,7 @@ h4 {
   }
   .text-overlay {
     font-size: 1rem;
+    font-weight: 400;
     width: auto;
   }
   .research-text {

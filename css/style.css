@@ -18,7 +18,25 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* the botton of back to top */
+#backToTopBtn {
+  display: none;
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  font-size: 18px; 
+  background-color: #061f53; 
+  color: white;
+  border: none; 
+  padding: 10px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
 
+#backToTopBtn:hover {
+  background-color: #ffb300; 
+}
 /*---------header-------------*/
 header {
   width: 100%;

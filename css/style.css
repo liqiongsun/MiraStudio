@@ -170,8 +170,8 @@ h1 {
   position: absolute;
   color: #ffb400;
   text-align: center;
-  font-weight: 250;
-  font-size: 1.6rem;
+  font-weight: 200;
+  font-size: 1.8rem;
   line-height: 1.5;
   width: 50%;
 }
@@ -236,7 +236,12 @@ h5 {
 .research-1 .images{
   border-radius: 20px;
   border: 1px solid  #ffb400;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
+}
+.images:hover {
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.6); /* Soft glow effect */
 }
 .research-1 > div {
   overflow: hidden;

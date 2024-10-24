@@ -923,6 +923,21 @@ h4 {
   line-height: 1.5;
   margin-top: 5rem;
 }
+
+.resume-download{
+  padding: 10px 14px;
+  color: #004e9c;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1.5rem;
+  background-color: #dee4f4;
+  transition: background-color,ease 3s;
+}
+.resume-download:hover{
+  color: #ffc800;
+  background-color: #203978;
+}
+
 .me-container{
   perspective: 1000px;
 }

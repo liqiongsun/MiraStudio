@@ -983,6 +983,7 @@ margin-bottom: 1rem;
 @media (max-width: 768px) {
   .design-principle,.rating-text{
     width: 90%;
+    font-size: 0.8rem;
   }
 
 }

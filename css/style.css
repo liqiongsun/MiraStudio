@@ -777,7 +777,7 @@ h4 {
     margin-top: 20px;
     margin-bottom: 20px;
     align-items: flex-start;
-    gap: 3rem;
+    gap: 2rem;
     white-space: nowrap;
   }
 
@@ -983,8 +983,17 @@ margin-bottom: 1rem;
 @media (max-width: 768px) {
   .design-principle,.rating-text{
     width: 90%;
-    font-size: 0.8rem;
   }
+  .principle-text{
+    font-size: 0.9rem;
+  }
+  .p-m{
+    font-size: 0.9rem;
+  }
+  .m-f{
+    gap:1.5rem;
+  }
+ 
 
 }
 
@@ -1015,6 +1024,10 @@ margin-bottom: 1rem;
   margin-bottom: 0;
 }
 @media screen and (max-width: 768px) {
+  .graphic{
+    width: 100%;
+  }
+  
   .imges {
     width: 100%;
     height: auto;
@@ -1026,6 +1039,7 @@ margin-bottom: 1rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 10px;
   }
   .process-text2 {
     font-size: 0.8rem;

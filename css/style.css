@@ -164,6 +164,9 @@ h1 {
 }
 
 .text-overlay {
+  font: "Roboto";
+  font-weight: 300;
+  font-style: normal;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -173,7 +176,16 @@ h1 {
   font-weight: 200;
   font-size: 1.8rem;
   line-height: 1.5;
-  width: 50%;
+  width: 45%;
+}
+@media screen and (max-width: 768px) {
+  .text-overlay {
+  font: "Roboto";
+  font-weight: 100;
+  font-style: normal;
+  padding-left: 50px;
+  padding-right: 50px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .text-overlay {

@@ -75,8 +75,8 @@ img {
   justify-content: center;
   gap: 130px;
   position: relative;
-
-  z-index: 2000;
+  top: px;
+  z-index: 10;
 }
 .touxiang {
   position: relative;
@@ -88,13 +88,13 @@ img {
 
 /*--------------------------nav-two------------------*/
 .nav-two {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 70px;
-  position: fixed;
-  z-index: 1100;
-  bottom: 65px;
+  position: absolute;
+  z-index: 50;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   padding: 10px;
@@ -126,14 +126,13 @@ img {
   fill: #ffc67b;
   filter: drop-shadow(0 0 20px rgba(212, 187, 44, 0.8));
 }
-
 .robot-container {
   position: relative;
   display: inline-block;
 }
 .talk-to-me {
   position: absolute;
-  bottom: -240px;
+  bottom: -180px;
   left: 15%;
   z-index: 15;
   transform: translateX(-50%);
@@ -152,7 +151,7 @@ img {
 }
 .robot-talking {
   position: absolute;
-  bottom: -340px;
+  bottom: -280px;
   left: 15%;
   z-index: 15;
   transform: translateX(-50%);

@@ -36,25 +36,126 @@
         <h5 class="small-title">Brand design l packaging</h5>
       </section>
 
-      <section class="taobao-project">
+      <section class="branding">
         <h2 class="taobao-title">My Brand-SkiSilk</h2>
         <p class="taobao-text">
           At Skisilk, we believe skincare should be both effective and gentle.
           Our products use advanced science to care for sensitive skin, giving
           customers the confidence of healthy, radiant skin without harsh
-          ingredients.
+          ingredients. <br />"Where Innovation Meets Gentle Care" <br />"Radiant
+          Skin,Trusted Solutions"
         </p>
       </section>
-      <section class="design-principle">
-        <div class="design-text">
-          <h3 class="ux-title">Purpose Statement</h3>
-          <hr />
-          <p class="principle-text">
-            Offering science-based, gentle solutions so that users achieve
-            healthier skin.
-          </p>
+      <div class="statement-groups">
+        <section class="statement">
+          <div class="design-text">
+            <h3 class="ux-title">Purpose Statement</h3>
+            <hr />
+            <p class="principle-text">
+              Offering science-based, gentle solutions so that users achieve
+              healthier skin.
+            </p>
+          </div>
+        </section>
+        <section class="statement">
+          <div class="design-text">
+            <h3 class="ux-title">Brand Values</h3>
+            <hr />
+            <p class="principle-text">
+              Innovation-– Pioneering skincare solutions through advanced
+              science. Transparency- Honest communication about ingredients and
+              results. Safe-Reliable-thoroughly tested products for safe use
+              Customer focus-Personalized care to meet individual skin needs.
+            </p>
+          </div>
+        </section>
+        <section class="statement">
+          <div class="design-text">
+            <h3 class="ux-title">Vision Statement</h3>
+            <hr />
+            <p class="principle-text">
+              The trusted leader in providing gentle, science-driven solutions
+              that transform skin health .
+            </p>
+          </div>
+        </section>
+        <section class="statement">
+          <div class="design-text">
+            <h3 class="ux-title">Brand Mission</h3>
+            <hr />
+            <p class="principle-text">
+              SkiSilk creates innovative, effective skincare solutions that
+              protect, nurture, and empower sensitive skin, with safety and
+              science at the core of everything we do.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="showcase">
+        <h2 class="taobao-title">My Brand-SkiSilk Showcase</h2>
+        <div class="image-container">
+          <div class="arrow left" onclick="prevImage()">❮</div>
+          <div class="img-group">
+            <img src="img/1.png" alt="image" width="800" height="450" />
+            <img src="img/2.png" alt="image" width="800" height="450" />
+            <img src="img/3.png" alt="image" width="800" height="450" />
+            <img src="img/4.png" alt="image" width="800" height="450" />
+            <img src="img/5.png" alt="image" width="800" height="450" />
+            <img src="img/6.png" alt="image" width="800" height="450" />
+            <img src="img/7.png" alt="image" width="800" height="450" />
+            <img src="img/8.png" alt="image" width="800" height="450" />
+            <img src="img/9.png" alt="image" width="800" height="450" />
+            <img src="img/10.png" alt="image" width="800" height="450" />
+            <img src="img/11.png" alt="image" width="800" height="450" />
+            <img src="img/12.png" alt="image" width="800" height="450" />
+            <img src="img/13.png" alt="image" width="800" height="450" />
+            <img src="img/14.png" alt="image" width="800" height="450" />
+            <img src="img/15.png" alt="image" width="800" height="450" />
+            <img src="img/16.png" alt="image" width="800" height="450" />
+            <img src="img/17.png" alt="image" width="800" height="450" />
+            <img src="img/18.png" alt="image" width="800" height="450" />
+            <img src="img/19.png" alt="image" width="800" height="450" />
+            <img src="img/20.png" alt="image" width="800" height="450" />
+            <img src="img/21.png" alt="image" width="800" height="450" />
+            <img src="img/22.png" alt="image" width="800" height="450" />
+            <img src="img/23.png" alt="image" width="800" height="450" />
+            <img src="img/24.png" alt="image" width="800" height="450" />
+            <img src="img/25.png" alt="image" width="800" height="450" />
+            <img src="img/26.png" alt="image" width="800" height="450" />
+            <img src="img/27.png" alt="image" width="800" height="450" />
+          </div>
+          -- Arrows -->
+
+          <div class="arrow right" onclick="nextImage()">❯</div>
         </div>
-      </section>
+      </div>
+      <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll(".img-group img");
+        const totalImages = images.length;
+
+        function showImage(index) {
+          const imageWidth = images[0].width;
+          const offset = -index * imageWidth;
+          document.querySelector(
+            ".img-group"
+          ).style.transform = `translateX(${offset}px)`;
+        }
+
+        function nextImage() {
+          currentIndex = (currentIndex + 1) % totalImages;
+          showImage(currentIndex);
+        }
+
+        function prevImage() {
+          currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+          showImage(currentIndex);
+        }
+
+        // Auto-slide functionality
+        setInterval(nextImage, 3000); // Adjust timing as needed (3000ms = 3s)
+      </script>
       <button onclick="topFunction()" id="backToTopBtn" title="返回顶部">
         ↑
       </button>

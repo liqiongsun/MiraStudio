@@ -220,10 +220,10 @@ h2 {
 .research-text,
 h4 {
   font-size: 1.4rem;
+  font-weight: 600;
   color: #e6e6e6;
   margin-bottom: 0;
   padding-bottom: 0;
-  font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.04rem;
 }
@@ -328,7 +328,8 @@ h4 {
   text-align: center;
 }
 .title {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  font-weight: 600;
   color: #eaf0ff;
   width: 65%;
   text-align: center;
@@ -336,6 +337,7 @@ h4 {
 @media screen and (max-width: 928px) {
   .title {
     font-size: 1.3rem;
+    font-weight: 500;
     width: 70%;
   }
 }
@@ -627,7 +629,7 @@ h4 {
  
 }
 .taobao-text{
-  color: #FFECDB;
+  color: #ffffff;
   line-height: 2;
 }
 .taobao-title{
@@ -712,7 +714,7 @@ h4 {
     margin-top: 2rem;
   }
   .taobao-text{
-    color: #FFECDB;
+    color: #ffffff;
     line-height: 1.5;
   }
   .taobao-title{
@@ -1240,6 +1242,7 @@ margin-bottom: 1rem;
   }
   .research-text {
     font-size: 1.4rem;
+    font-weight: 600;
   }
   .me-text {
     width: 80%;
@@ -1292,3 +1295,64 @@ margin-bottom: 1rem;
     margin: 10px 10px;
   }
 }
+
+/*-------brand design---------*/
+.branding{
+  align-items: left;
+  width: 65%;
+  margin-top: 4rem;
+
+}
+.statement-groups{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+}
+.image-container {
+  position: relative;
+  width: 800px;
+  height: 450px;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.statement{
+  color: white;
+  line-height: 2;
+}
+.img-group {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: calc(800px * 27); /* Adjust based on the number of images */
+}
+
+.img-group img {
+  width: 800px;
+  height: 450px;
+}
+
+/* Arrow styles */
+.arrow {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;

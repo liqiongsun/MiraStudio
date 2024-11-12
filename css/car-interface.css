@@ -132,7 +132,7 @@ img {
 }
 .talk-to-me {
   position: absolute;
-  bottom: -180px;
+  bottom: -220px;
   left: 15%;
   z-index: 15;
   transform: translateX(-50%);
@@ -151,7 +151,7 @@ img {
 }
 .robot-talking {
   position: absolute;
-  bottom: -280px;
+  bottom: -300px;
   left: 15%;
   z-index: 15;
   transform: translateX(-50%);

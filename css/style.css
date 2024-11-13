@@ -502,6 +502,7 @@ h4 {
 
 .wire-text{
   color: #eaf0ff;
+  font-weight: 300;
   line-height: 1.6;
 }
 @media screen and (min-width: 768px) and (max-width: 1400px) {
@@ -782,6 +783,7 @@ h4 {
   text-align: left;
 }
 .uxtext-a{
+  font-weight: 300;
   line-height: 2;
 }
 @media (max-width: 768px) {
@@ -840,6 +842,7 @@ margin-bottom: 1rem;
   background-color: #79614D;
 }
 .phone-text1,.phone-text{
+  font-weight: 300;
   margin-left: 3rem;
   margin-right: 3rem;
   line-height: 2;
@@ -901,6 +904,7 @@ margin-bottom: 1rem;
 .ins-text{
   background-color: #F7F6F6;
   border-radius: 15px;
+  font-weight: 300;
   color: #584839;
   padding: 2rem;
   border-radius: 14px;
@@ -957,11 +961,13 @@ margin-bottom: 1rem;
 .m-f{
   display: flex;
   flex-direction: row;
+  font-weight: 300;
   gap: 4rem;
 }
 .p-a{
   display: flex;
   flex-direction: row;
+  font-weight: 300;
   gap: 4rem;
 }
 .p-m{
@@ -1000,6 +1006,7 @@ margin-bottom: 1rem;
   }
   .principle-text{
     font-size: 0.9rem;
+   
   }
   .p-m{
     font-size: 0.9rem;
@@ -1297,28 +1304,56 @@ margin-bottom: 1rem;
 }
 
 /*-------brand design---------*/
-.branding{
+.branding,.showcase{
   align-items: left;
   width: 65%;
-  margin-top: 4rem;
-
+}
+.showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
 }
 .statement-groups{
-  margin-top: 2rem;
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
   width: 65%;
 }
-.image-container {
+.statement-title{
+  font-size: 2rem;
+  font-weight: 500;
+  color: #dee4f4;
+  text-align: left;
+  font: "Maitree";
+}
+.design-text,.brand-text{
+  font-weight: 300;
+  color: #D9D9D9;
+  line-height: 2;
+}
+.showcase-solids {
   position: relative;
-  width: 800px;
-  height: 450px;
-  margin: auto;
-  overflow: hidden;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  width: 920px;
+  height: 506.25px;
+  margin-top: 2rem;
+}
+  .image-container {
+    position: relative; /* 确保箭头相对于此容器定位 */
+    width: 900px;
+    height: 506.25px;
+    margin: auto;
+    overflow: hidden
+}
+.brand-title{
+  font-family:"Maitree";
+  font-weight: 300;
+  font-size: 3rem;
+  color: #ffffff;
 }
 .statement{
   color: white;
@@ -1327,32 +1362,38 @@ margin-bottom: 1rem;
 .img-group {
   display: flex;
   transition: transform 0.5s ease;
-  width: calc(800px * 27); /* Adjust based on the number of images */
+  width: calc(900px * 26); /* Adjust based on the number of images */
+  height: auto;
 }
 
 .img-group img {
-  width: 800px;
-  height: 450px;
+  width: 900px;
+  height: 506.25px;
 }
 
 /* Arrow styles */
 .arrow {
   position: absolute;
-  top: 50%;
-  width: 50px;
+  top: 50%; /* 垂直居中 */
+  width: 30px;
   height: 50px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #018c67a8;
+  border-radius: 8px;
   color: white;
   font-size: 30px;
   text-align: center;
   line-height: 50px;
   cursor: pointer;
-  transform: translateY(-50%);
+  transform: translateY(-50%); /* 垂直居中调整 */
+  z-index: 10;
 }
 
 .arrow.left {
-  left: 10px;
+  left: -40px; /* 向左对齐 */
+  z-index: 20;
 }
 
 .arrow.right {
-  right: 10px;
+  right: -40px;
+  z-index: 20;
+}

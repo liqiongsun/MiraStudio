@@ -1373,6 +1373,10 @@ margin-bottom: 1rem;
 .img-group img {
   width: 900px;
   height: 506.25px;
+  transition: transform 0.3s ease;
+}
+.img-group img.hovered {
+  transform: scale(1.03); /* Slightly enlarge the image */
 }
 .show1{
   margin-top: 2rem;

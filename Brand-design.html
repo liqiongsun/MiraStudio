@@ -153,6 +153,7 @@
         let currentIndex = 0;
         const images = document.querySelectorAll(".img-group img");
         const totalImages = images.length;
+        let intervalId;
 
         function showImage(index) {
           const imageWidth = images[0].width;
@@ -173,8 +174,31 @@
         }
 
         // Auto-slide functionality
-        setInterval(nextImage, 3000); // Adjust timing as needed (3000ms = 3s)
+        function startAutoSlide() {
+          intervalId = setInterval(nextImage, 3000); // Adjust timing as needed (3000ms = 3s)
+        }
+
+        function stopAutoSlide() {
+          clearInterval(intervalId);
+        }
+
+        // Add event listeners for hover
+        images.forEach((img) => {
+          img.addEventListener("mouseenter", () => {
+            stopAutoSlide();
+            img.classList.add("hovered"); // Add class to apply scaling
+          });
+
+          img.addEventListener("mouseleave", () => {
+            startAutoSlide();
+            img.classList.remove("hovered"); // Remove class when mouse leaves
+          });
+        });
+
+        // Start auto slide on page load
+        startAutoSlide();
       </script>
+
       <button onclick="topFunction()" id="backToTopBtn" title="返回顶部">
         ↑
       </button>

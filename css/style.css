@@ -164,14 +164,13 @@ h1 {
 }
 
 .text-overlay {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 200;
   font-style: normal;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  color: #ffb400;
+  color: #ededed;
   text-align: center;
   font-size: 1.8rem;
   line-height: 1.5;
@@ -217,12 +216,12 @@ h2 {
 }
 .research-text,
 h4 {
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: 1.6rem;
+  font-weight: 300;
   color: #e6e6e6;
   margin-bottom: 0;
   padding-bottom: 0;
-  line-height: 1.5;
+  line-height: 1.2;
   letter-spacing: 0.04rem;
 }
 h5 {
@@ -1115,15 +1114,44 @@ margin-bottom: 1rem;
   border-top: 1px solid #d08b00;
   border-bottom: 1px solid #ffb400;
 }
+.me-text1{
+  font-family: "Cormorant Garamond";
+  font-size: 2.5rem;
+  padding-bottom: 0;
+  line-height: 1 ;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #f9f3ff;
+  background: linear-gradient(90deg, #cbb3ff, #9b54ff, #d4a1ff, #7b42f6);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: gradient-flow 4s infinite;
+}
+@keyframes gradient-flow {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
 .me-text {
   color: #eaf0ff;
   font-weight: 200;
   font-family: "Sawarabi Gothic", sans-serif;
-  width: 22%;
-  line-height: 1.8;
+  width: 40%;
+  line-height: 2;
   font-size: 1rem;
   text-align: left;
-  margin-left: 8rem;
+  margin-top: 0;
+  margin-left: 5rem;
 }
 @media (max-width: 768px) {
   .intro {
@@ -1175,10 +1203,16 @@ margin-bottom: 1rem;
   font-weight: 500;
   color: #d08b00;
 }
+.resume-title{
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+
+}
 .title2 {
-  
-  font-size: 1.4rem;
-  font-weight: 300;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.8rem;
+  font-weight: 600;
   color: #ffb400;
 }
 .detail {
@@ -1247,7 +1281,7 @@ margin-bottom: 1rem;
   }
   .research-text {
     font-size: 1.3rem;
-    font-weight: 500;
+    font-weight: 300;
   }
   .me-text {
     width: 80%;

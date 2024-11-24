@@ -1121,8 +1121,8 @@ margin-bottom: 1rem;
   line-height: 1 ;
   margin-top: 0;
   margin-bottom: 0;
-  color: #f9f3ff;
-  background: linear-gradient(90deg, #cbb3ff, #9b54ff, #d4a1ff, #7b42f6);
+  color: #ffffff;
+  background: linear-gradient(90deg, #cbb3ff, #dbc1ff, #d4a1ff, #ae89ff);
   background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1159,7 +1159,9 @@ margin-bottom: 1rem;
     text-align: center;
     padding: 1.8rem; 
   }
-
+  .me-text1{
+    font-size: 2rem;
+  }
   .me {
     transform: rotate(0);
     width: 80%;
@@ -1206,13 +1208,13 @@ margin-bottom: 1rem;
 .resume-title{
   font-family: "Cormorant Garamond", serif;
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 400;
 
 }
 .title2 {
   font-family: "Cormorant Garamond", serif;
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 400;
   color: #ffb400;
 }
 .detail {
@@ -1221,6 +1223,7 @@ margin-bottom: 1rem;
 }
 @media screen and (max-width: 768px) {
   .resume {
+    width: 90%;
     flex-direction: column;
     align-items: center;
   }
@@ -1239,7 +1242,7 @@ margin-bottom: 1rem;
     align-items: center;
   }
   .me-text {
-    width: 80%;
+    width: 90%;
     margin-top: 2rem;
   }
 }
@@ -1261,7 +1264,7 @@ margin-bottom: 1rem;
     font-size: 1.2rem;
   }
   .portfolio {
-    width: 80%;
+    width: 90%;
   }
   .title {
     font-size: 1.1rem;
@@ -1283,15 +1286,23 @@ margin-bottom: 1rem;
     font-size: 1.3rem;
     font-weight: 300;
   }
+  .me{
+    width: 100%;
+  }
   .me-text {
     width: 80%;
   }
+  .me-text0 {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
   .hero-container {
-    width: 80%;
+    width: 95%;
   }
   .project-text {
     font-size: 0.9rem;
-    width: 80%;
+    width: 95%;
     height: auto;
     margin-bottom: 2rem;
   }
@@ -1310,7 +1321,7 @@ margin-bottom: 1rem;
     font-size: 1.4rem;
   }
   .p-text {
-    width: 80%;
+    width: 90%;
     padding: 1rem;
   }
   .Visual-title {

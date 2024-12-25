@@ -1653,6 +1653,10 @@ video {
   margin-bottom: 4rem;
 }
 
+.project-text.rating{
+  margin-top: 40px;
+}
+
 @media (max-width: 768px) {
 
    .five-phones {

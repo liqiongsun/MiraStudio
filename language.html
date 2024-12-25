@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mira Studio</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tilt+Warp&display=swap" rel="stylesheet">
+  <body>
+    <header id="header">
+      <div class="logo">MIRA Studio</div>
+      <nav class="nav">
+        <ul>
+          <li><a class="nav-link" href="index.html">UI/UX Work</a></li>
+          <li><a class="nav-link" href="chinese-work.html">Graphic Work</a></li>
+          <li><a class="nav-link" href="about-me.html">About Me</a></li>
+        </ul>
+      </nav>
+      </nav>
+    </header>
+    <main id="language">
+      <section class="project">
+        <h2 class="project-name">Immigrant Integration Research and App Design</h2>
+        <hr>
+        <div class="project-discription">
+            <h3 class="project-text">Project Discription</h3>
+            <p><b>This project</b> explores the specific challenges new immigrants face due to <b>language barriers</b>, examining their impact on <b>employment</b>, <b>social interaction</b>, <b>education</b>, and <b>mental health</b>. The goal was to provide <b>design solutions</b> to improve language support systems. However, the final result deviated somewhat from my original <b>research</b> and <b>vision</b>. As a team project, aligning everyone’s ideas proved challenging, and the outcome did not fully reflect the initial goals. Despite this, the experience was valuable for learning <b>teamwork</b>, <b>compromise</b>, and balancing different perspectives in the design process.</p>
+        </div>
+        <hr>
+        <div class="role-content">
+          <div class="role">
+              <p><b>My Role</b></p>
+              <p>UX Researcher</p>
+              <p>UX Designer</p>
+              <p>Web Designer</p>
+          </div>
+          <div class="role">
+              <p><b>Timeline</b></p>
+              <p>4 weeks</p>
+          </div>
+          <div class="role">
+            <p><b>Tools</b></p>
+            <p>Figma</p>
+            <p>lanshop</p>
+            <p>coding</p>
+          </div>
+      </div>
+      </section>
+      <div class="language-1">
+        <img src="img/language-banner.png"  alt="language banner" width="1920" height="629">
+        <div class="language-content">
+          <h1 class="language-title">Bridging <br>Communication Gaps </h1>
+          <p class="language-subtitle">Empowering new immigrants with personalized language solutions for smoother integration</p>
+          <p class="language-p">Unlock your potential with tailored tools and support. From daily conversations to professional growth, our solutions are designed to help you navigate language barriers and thrive in your new community.</p>
+        </div>
+      </div>
+      <section class="project">
+        <div class="project-discription">
+          <h3 class="project-text">Challenge</h3>
+          <p>*Designing for new immigrants from different cultures and languages was challenging. I focused on creating a solution that addressed their unique needs while keeping it simple and inclusive.
+             <br>*Determining the most critical issues—like employment, social interaction, education, or stress—required thorough research and user feedback to ensure I was solving real problems effectively.</p>
+        </div>
+        <hr>
+        <div class="project-discription">
+          <h3 class="project-text">Process</h3>
+          <p>This project used different tools, like personas, wireframes, and storytelling, to explore how a language app could help new immigrants overcome language barriers. The app adapts to each user's level, offering personalized lessons that make learning easier and more relevant. In the end, the project focused on creating a customized solution that helps new immigrants improve their communication skills, making it easier for them to adjust to life in a new country.</p>
+        </div>
+      </section>
+    </div>
+    <div class="carousel-container">
+      <div class="carousel-wrapper">
+        <div class="carousel-track">
+          <img class="carousel-item" src="img/lan1.jpg" alt="Image 1" />
+          <img class="carousel-item" src="img/lan2.jpg" alt="Image 2" />
+          <img class="carousel-item" src="img/lan3.jpg" alt="Image 3" />
+          <img class="carousel-item" src="img/lan4.jpg" alt="Image 4" />
+          <img class="carousel-item" src="img/lan5.jpg" alt="Image 5" />
+          <img class="carousel-item" src="img/lan6.jpg" alt="Image 6" />
+          <img class="carousel-item" src="img/lan7.jpg" alt="Image 7" />
+          <img class="carousel-item" src="img/lan8.jpg" alt="Image 8" />
+          <img class="carousel-item" src="img/lan9.jpg" alt="Image 9" />
+          <img class="carousel-item" src="img/lan10.jpg" alt="Image 10" />
+          <img class="carousel-item" src="img/lan11.jpg" alt="Image 11" />
+        </div>
+      </div>
+      <button class="carousel-arrow carousel-arrow-left">&lt;</button>
+      <button class="carousel-arrow carousel-arrow-right">&gt;</button>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+      const track = document.querySelector('.carousel-track');
+      const items = document.querySelectorAll('.carousel-item');
+      const leftArrow = document.querySelector('.carousel-arrow-left');
+      const rightArrow = document.querySelector('.carousel-arrow-right');
+
+      let currentIndex = 0;
+      const totalItems = items.length;
+      const itemWidth = 630; // 图片宽度
+      const autoSlideInterval = 5000; // 自动轮播间隔
+      let autoSlideTimer;
+
+      // 更新轮播位置
+      function updateCarousel() {
+        track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+      }
+
+      // 自动轮播启动函数
+      function startAutoSlide() {
+        autoSlideTimer = setInterval(() => {
+          currentIndex = (currentIndex + 1) % totalItems;
+          updateCarousel();
+        }, autoSlideInterval);
+      }
+
+      // 停止自动轮播
+      function stopAutoSlide() {
+        clearInterval(autoSlideTimer);
+      }
+
+      // 左箭头点击事件
+      leftArrow.addEventListener('click', () => {
+        stopAutoSlide();
+        currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+        updateCarousel();
+        startAutoSlide(); // 重新启动自动轮播
+      });
+
+      // 右箭头点击事件
+      rightArrow.addEventListener('click', () => {
+        stopAutoSlide();
+        currentIndex = (currentIndex + 1) % totalItems;
+        updateCarousel();
+        startAutoSlide(); // 重新启动自动轮播
+      });
+
+      // 鼠标悬停暂停轮播
+      track.addEventListener('mouseover', stopAutoSlide);
+      track.addEventListener('mouseout', startAutoSlide);
+
+      // 初始化
+      updateCarousel();
+      startAutoSlide();
+    });
+
+    </script>
+    <script src="js/script.js">
+    </script>
+    <div class="project">
+      <img class="l-phone2"src="img/i-phone.svg" alt="Test Image" />
+      
+      <div class="project-discription">
+        
+        <h3 class="project-text">Learning</h3>
+        <p>1.I learned the importance of understanding user needs through research, ensuring the design truly addresses real-life challenges.
+          <br>2.Designing a solution that is both simple and effective for diverse users requires careful planning and iteration.
+          <br>3.Working in a team taught me how to align different perspectives and ideas while staying focused on the project goals.
+          <br>4.I learned to adapt my design process when faced with unexpected outcomes, improving my problem-solving skills and flexibility.
+          <br>5.Incorporating features that support users of varying language levels highlighted the importance of inclusive design principles.
+        </p>
+      </div>
+      <img class="l-phone2"src="img/l-phone2.svg" alt="language-phone">
+    </div> 
+       
+      
+
+      <button onclick="topFunction()" id="backToTopBtn" title="返回顶部">
+        ↑
+      </button>
+      <div class="back-to-home">
+        <a href="index.html">Back to Homepage</a>
+      </div>
+    
+    </main>
+
+    <footer>
+      <h3 class="footer-welcome">Welcome to my portfolio website!</h3>
+      <p class="footer-text">
+        This is where I showcase my personal work and creativity. Through this
+        website, you can get a glimpse of my design style, <br />
+        skills, and project experiences. Thank you for visiting, and I hope you
+        find something that interests you here. If you have <br />
+        any questions or suggestions, feel free to reach out to me. Looking
+        forward to connecting and sharing with you!
+      </p>
+      <div class="footer-icons">
+        <img class="footer-icon" src="img/footer-in.svg">
+        <img class="footer-icon" src="img/footer-mail.svg">
+        <p class="welcome">©Liqiong Sun 2024</p>
+      </div>
+    </footer>
+  </body>
+</html>

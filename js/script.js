@@ -11,7 +11,34 @@ function scrollFunction() {
     backToTopBtn.style.display = "none"; // 隐藏按钮
   }
 }
+//visual design 图片轮播
+  const vGroup = document.querySelector('.v-group');
 
+  // 暂停动画函数
+  vGroup.addEventListener('mouseover', () => {
+    vGroup.style.animationPlayState = 'paused';
+  });
+
+  // 恢复动画函数
+  vGroup.addEventListener('mouseout', () => {
+    vGroup.style.animationPlayState = 'running';
+  });
+
+//视频播放控制
+
+const video = document.getElementById('myVideo');
+
+function playPause() {
+  if (video.paused) {
+    video.play();
+  } else {
+    video.pause();
+  }
+}
+
+function muteUnmute() {
+  video.muted = !video.muted;
+}
 // 点击按钮时，页面回到顶部
 function topFunction() {
   document.body.scrollTop = 0; // Safari
@@ -140,3 +167,61 @@ function decreaseRightTemperature() {
     updateRightTemperatureDisplay();
   }
 }
+
+//language 
+document.addEventListener('DOMContentLoaded', () => {
+  const track = document.querySelector('.carousel-track');
+  const items = document.querySelectorAll('.carousel-item');
+  const leftArrow = document.querySelector('.carousel-arrow-left');
+  const rightArrow = document.querySelector('.carousel-arrow-right');
+
+  let currentIndex = 0;
+  const totalItems = items.length;
+  const itemWidth = 630; // 图片宽度
+  const autoSlideInterval = 3000; // 自动轮播间隔时间（毫秒）
+  let autoSlideTimer;
+
+  // 更新轮播位置
+  function updateCarousel() {
+    track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+  }
+
+  // 自动轮播启动函数
+  function startAutoSlide() {
+    autoSlideTimer = setInterval(() => {
+      currentIndex = (currentIndex + 1) % totalItems; // 循环切换到下一张
+      updateCarousel();
+    }, autoSlideInterval);
+  }
+
+  // 停止自动轮播
+  function stopAutoSlide() {
+    clearInterval(autoSlideTimer);
+  }
+
+  // 左箭头点击事件
+  leftArrow.addEventListener('click', () => {
+    stopAutoSlide();
+    currentIndex = (currentIndex - 1 + totalItems) % totalItems; // 切换到上一张
+    updateCarousel();
+    startAutoSlide(); // 重启自动轮播
+  });
+
+  // 右箭头点击事件
+  rightArrow.addEventListener('click', () => {
+    stopAutoSlide();
+    currentIndex = (currentIndex + 1) % totalItems; // 切换到下一张
+    updateCarousel();
+    startAutoSlide(); // 重启自动轮播
+  });
+
+  // 鼠标悬停时停止自动轮播
+  track.addEventListener('mouseover', stopAutoSlide);
+
+  // 鼠标移出时重新启动自动轮播
+  track.addEventListener('mouseout', startAutoSlide);
+
+  // 初始化
+  updateCarousel();
+  startAutoSlide();
+});

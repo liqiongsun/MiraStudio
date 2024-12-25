@@ -1,0 +1,444 @@
+body {
+  font-family: Smythe, sans-seri;
+  background: linear-gradient(
+    135deg,
+    #031018,
+    #0e2354,
+    #0e2354,
+    #071021,
+    #0e2354
+  );
+  background-attachment: fixed;
+  max-width: 1920px;
+  background-repeat: repeat-y;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.kenan {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  width: 706px;
+  height: 222px;
+  cursor: crosshair;
+}
+
+.magnifier {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgba(99, 99, 99, 0.3);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  display: none;
+  pointer-events: none;
+}
+
+.magnifier img {
+  position: absolute;
+  width: 1590px;
+  height: auto;
+}
+.navbar {
+  width: 100vw;
+  background-color: #0f2964;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  box-sizing: border-box;
+}
+h1 {
+  font: Smythe;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #ddd;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.navbar a:hover {
+  color: #feb47b;
+}
+/* -----------video-banner---------- */
+.video-banner {
+  position: relative;
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.video-banner video {
+  width: 100%;
+  height: 100%;
+  max-height: 600px;
+  object-fit: cover; /* 确保视频内容覆盖整个容器 */
+}
+
+.toggle-play-pause-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  padding: 14px 28px;
+  font-size: 1rem;
+  background-color: rgba(169, 0, 0, 0.525);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-play-pause-btn:hover {
+  background-color: rgba(0, 20, 91, 0.7);
+}
+/* --------------------New Clues to Discover-------------- */
+.new-books-section {
+  text-align: center;
+}
+
+.new-books-section {
+  text-align: center;
+  padding: 30px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.group-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: calc(231px * 2 + 20px);
+  overflow: hidden;
+}
+
+.sixgroup {
+  display: flex;
+  transition: transform 1.5s ease;
+  gap: 20px;
+  width: calc(231px * 2 + 30px);
+}
+.group1 {
+  display: flex;
+  gap: 20px;
+}
+
+.group1 img {
+  width: 231px;
+  height: 347px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.group1 img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+}
+
+.arrow {
+  background-color: rgba(158, 178, 251, 0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 60, 181, 0.7);
+  box-shadow: 0 0 10px rgba(202, 228, 252, 0.78);
+}
+
+/* ------------ Detective's Discounts--------------*/
+
+.discounts-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* 居中 */
+}
+.bookgroup {
+  margin-bottom: 15px;
+}
+.book {
+  background-color: rgba(0, 59, 142, 0.156);
+  border: 1px solid #d9d9d996;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.book:hover {
+  transform: scale(1.05);
+}
+
+.book img {
+  width: 100%;
+  max-width: 299px;
+  max-height: 450px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.book-title {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+.rating {
+  font-size: 1em;
+  color: #ffcc00;
+  margin: 5px 0;
+}
+
+.add-to-cart {
+  font-family: Smythe;
+  background-color: #00aff4;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 5px 15px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  transition: background-color 0.5s ease;
+  width: 250px;
+}
+
+.add-to-cart:hover {
+  background-color: #218838;
+}
+
+.cart-icon {
+  font-size: 1.2em;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+  background-color: #0e2354;
+  border-top: 1px solid rgba(255, 255, 255, 0.606);
+  color: #fff;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+
+
+/* 手机竖屏（最大宽度 600px） */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .kenan {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .kenan img {
+    width: 100%; /* 调整图片宽度 */
+    height: auto; /* 保持比例 */
+  }
+
+  .magnifier {
+    width: 80px; /* 缩小放大镜 */
+    height: 80px; /* 缩小放大镜 */
+    border-radius: 50%;
+  }
+
+  .magnifier img {
+    width: 150%; /* 确保放大镜内容充足 */
+    height: auto;
+  }
+
+
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  .video-banner video {
+    max-height: 300px;
+  }
+
+  .screen-content {
+    width: 90%; /* 缩小屏幕区域 */
+    height: auto;
+    left: 5%; /* 居中 */
+    top: 15%; /* 调整顶部位置 */
+  }
+
+  .discounts-section {
+    grid-template-columns: 1fr; /* 单列布局 */
+    gap: 15px; /* 增加图片间距 */
+  }
+
+  .book img {
+    max-width: 100%; /* 图片全宽 */
+    margin-bottom: 10px; /* 缩小图片间距 */
+  }
+
+  .book-title {
+    font-size: 1rem; /* 标题更小 */
+  }
+
+  .add-to-cart {
+    width: 100%; /* 按钮全宽 */
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+/* 平板（最大宽度 900px） */
+@media (max-width: 900px) {
+  .navbar ul {
+    flex-direction: column; /* 垂直菜单 */
+  }
+
+  .navbar li {
+    margin: 5px 0;
+  }
+
+  .video-banner video {
+    max-height: 400px;
+  }
+
+  .discounts-section {
+    grid-template-columns: repeat(2, 1fr); /* 两列布局 */
+    gap: 15px; /* 调整间距 */
+  }
+
+  .book img {
+    width: 100%; /* 图片适应容器宽度 */
+    height: auto; /* 保持比例 */
+  }
+  .add-to-cart {
+    font-size: 1rem;
+    width: 200px;
+    padding: 10px 15px ;
+  }
+
+  .section-title {
+    font-size: 2rem; /* 缩小标题文字 */
+  }
+}
+
+@media (max-width: 1200px) {
+  .discounts-section {
+    grid-template-columns: repeat(3, 1fr); /* 三列布局 */
+    gap: 25px;
+  }
+
+  .book img {
+    width: 100%; /* 图片适应容器宽度 */
+    height: auto; /* 保持比例 */
+  }
+  .screen-content {
+    width: 50%; /* 调整屏幕宽度 */
+    left: 25%; /* 居中 */
+    height: auto;
+  }
+}
+
+
+/* 返回顶部按钮样式 */
+#backToTopBtn {
+  display: none; /* 默认隐藏 */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100; /* 确保按钮在页面最上层 */
+  background-color: #00aff4;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#backToTopBtn:hover {
+  background-color: #218838;
+  transform: scale(1.1); /* 鼠标悬停时放大 */
+}
+
+/* 返回首页按钮样式 */
+.back-to-home {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #00000068;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.back-to-home a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.back-to-home a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>childbook</title>
+    <link rel="stylesheet" href="book.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!---------kenan-------->
+    <div class="kenan" id="kenan">
+      <img src="img/Group7-3.png" alt="kenan" width="795" height="222" />
+
+      <div class="magnifier" id="magnifier">
+        <img src="img/Group7-3.png" alt="Magnified kenan image" />
+      </div>
+      <script>
+        const kenanContainer = document.getElementById("kenan");
+        const magnifier = document.getElementById("magnifier");
+        const magnifierImg = magnifier.querySelector("img");
+
+        kenanContainer.addEventListener("mousemove", (e) => {
+          const rect = kenanContainer.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+
+          magnifier.style.display = "block";
+          magnifier.style.left = `${x - magnifier.offsetWidth / 2}px`;
+          magnifier.style.top = `${y - magnifier.offsetHeight / 2}px`;
+
+          const zoomFactor = 2;
+          magnifierImg.style.left = `-${
+            x * zoomFactor - magnifier.offsetWidth / 2
+          }px`;
+          magnifierImg.style.top = `-${
+            y * zoomFactor - magnifier.offsetHeight / 2
+          }px`;
+        });
+
+        kenanContainer.addEventListener("mouseleave", () => {
+          magnifier.style.display = "none";
+        });
+      </script>
+    </div>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#newbooks">New Clues to Discover</a></li>
+        <li><a href="#sales">Character Profiles </a></li>
+        <li><a href="#discount">Detective's Discounts</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ul>
+    </nav>
+
+    <!-- video Banner -->
+
+    <div class="video-banner">
+      <video id="bannerVideo" autoplay loop playsinline>
+        <source src="video-banner.mp4" type="video/mp4" />
+        Your browser does not support video playback.
+      </video>
+
+      <button class="toggle-play-pause-btn" id="playPauseButton">Pause</button>
+    </div>
+
+    <script>
+      const video = document.getElementById("bannerVideo");
+      const playPauseButton = document.getElementById("playPauseButton");
+
+      playPauseButton.addEventListener("click", () => {
+        if (video.paused) {
+          video.play();
+          playPauseButton.textContent = "Pause";
+        } else {
+          video.pause();
+          playPauseButton.textContent = "Play";
+        }
+      });
+    </script>
+
+    <!-------------- New Clues to Discover ---------->
+    <div class="new-books-section">
+      <h1>---New Clues to Discover---</h1>
+      <div class="carousel-wrapper">
+        <button class="arrow left-arrow" id="prev">&#8249;</button>
+        <div class="group-container">
+          <div class="sixgroup">
+            <div class="group1">
+              <img src="img/book1.png" alt="book1" width="231" height="347" />
+              <img src="img/book2.png" alt="book2" width="231" height="347" />
+            </div>
+            <div class="group1">
+              <img src="img/book3.png" alt="book3" width="231" height="347" />
+              <img src="img/book4.png" alt="book4" width="231" height="347" />
+            </div>
+            <div class="group1">
+              <img src="img/book5.png" alt="book5" width="231" height="347" />
+              <img src="img/book6.png" alt="book6" width="231" height="347" />
+            </div>
+          </div>
+        </div>
+        <button class="arrow right-arrow" id="next">&#8250;</button>
+      </div>
+    </div>
+
+    <!------------ Detective's Discounts ------------>
+    <h1>---Detective's Discounts---</h1>
+
+    <div class="discounts-section">
+      <!-- 每本书的信息 -->
+      <div class="bookgroup">
+        <img
+          class="book"
+          src="img/image1.png"
+          alt="Book 1"
+          width="231"
+          height="347"
+        />
+        <h2 class="book-title">The Detective's Dilemma</h2>
+        <p class="rating">⭐⭐⭐⭐☆</p>
+        <button class="add-to-cart">
+          <span class="cart-icon">🛒</span> Add to cart
+        </button>
+      </div>
+
+      <div class="bookgroup">
+        <img
+          class="book"
+          src="img/image2.png"
+          alt="Book 2"
+          width="231"
+          height="347"
+        />
+        <h2 class="book-title">Mystery of the Old Mill</h2>
+        <p class="rating">⭐⭐⭐⭐⭐</p>
+        <button class="add-to-cart">
+          <span class="cart-icon">🛒</span> Add to cart
+        </button>
+      </div>
+
+      <div class="bookgroup">
+        <img
+          class="book"
+          src="img/image3.png"
+          alt="Book 3"
+          width="231"
+          height="347"
+        />
+        <h2 class="book-title">The Case of the Missing Key</h2>
+        <p class="rating">⭐⭐⭐⭐</p>
+        <button class="add-to-cart">
+          <span class="cart-icon">🛒</span> Add to cart
+        </button>
+      </div>
+
+      <div class="bookgroup">
+        <img
+          class="book"
+          src="img/image4.png"
+          alt="Book 4"
+          width="231"
+          height="347"
+        />
+        <h2 class="book-title">Secrets in the Shadows</h2>
+        <p class="rating">⭐⭐⭐⭐☆</p>
+        <button class="add-to-cart">
+          <span class="cart-icon">🛒</span> Add to cart
+        </button>
+      </div>
+
+      <div class="bookgroup">
+        <img
+          class="book"
+          src="img/image5.png"
+          alt="Book 5"
+          width="231"
+          height="347"
+        />
+        <h2 class="book-title">The Final Clue</h2>
+        <p class="rating">⭐⭐⭐⭐⭐</p>
+        <button class="add-to-cart">
+          <span class="cart-icon">🛒</span> Add to cart
+        </button>
+      </div>
+
+      <div class="bookgroup">
+        <img
+          class="book"
+          src="img/image6.png"
+          alt="Book 6"
+          width="231"
+          height="347"
+        />
+        <h2 class="book-title">Murder at Midnight</h2>
+        <p class="rating">⭐⭐⭐☆</p>
+        <button class="add-to-cart">
+          <span class="cart-icon">🛒</span> Add to cart
+        </button>
+      </div>
+      <div class="bookgroup">
+        <img
+          class="book"
+          src="img/image7.png"
+          alt="Book 6"
+          width="231"
+          height="347"
+        />
+        <h2 class="book-title">Murder at Midnight</h2>
+        <p class="rating">⭐⭐⭐☆</p>
+        <button class="add-to-cart">
+          <span class="cart-icon">🛒</span> Add to cart
+        </button>
+      </div>
+      <div class="bookgroup">
+        <img
+          class="book"
+          src="img/image8.png"
+          alt="Book 6"
+          width="231"
+          height="347"
+        />
+        <h2 class="book-title">Murder at Midnight</h2>
+        <p class="rating">⭐⭐⭐☆</p>
+        <button class="add-to-cart">
+          <span class="cart-icon">🛒</span> Add to cart
+        </button>
+      </div>
+      <div class="bookgroup">
+        <img
+          class="book"
+          src="img/image9.png"
+          alt="Book 6"
+          width="231"
+          height="347"
+        />
+        <h2 class="book-title">Murder at Midnight</h2>
+        <p class="rating">⭐⭐⭐☆</p>
+        <button class="add-to-cart">
+          <span class="cart-icon">🛒</span> Add to cart
+        </button>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="backToTopBtn" title="back-to-top">
+      ↑
+    </button>
+    <div class="back-to-home">
+      <a href="index.html">Back to Homepage</a>
+    </div> 
+    <script src="js/book.js"></script>
+    <!-- footer -->
+    <footer>&copy; "Book World 2024 | All Rights Reserved"</footer>
+  </body>
+</html>

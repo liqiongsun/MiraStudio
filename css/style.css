@@ -1149,10 +1149,10 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #E6F7FF;
+  background-color: #e2f6ff;
   width: 100%;
   height: auto;
-  border-top: 1px solid rgb(235, 250, 255);
+  margin-bottom: 4px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -1161,7 +1161,7 @@ video {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 800px;
+  width: 1000px;
   text-align: center;
   padding: 20px;
 }

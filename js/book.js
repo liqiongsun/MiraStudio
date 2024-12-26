@@ -3,9 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const leftArrow = document.querySelector(".left-arrow");
   const rightArrow = document.querySelector(".right-arrow");
 
-  let currentIndex = 0; // Set the initial index to 0
-  const totalGroups = document.querySelectorAll(".group1").length;
-  const groupWidth = 231 * 2 + 30;
+  let currentIndex = 0; // 初始索引
+  const groups = document.querySelectorAll(".group1"); // 获取所有组
+  const totalGroups = groups.length; // 计算总组数
+  const groupWidth = groups[0].offsetWidth + 30; // 组宽度（包括间距）
   let slideInterval;
 
   function updateSlider() {
@@ -13,36 +14,28 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function nextSlide() {
-    if (currentIndex < totalGroups - 1) {
-      currentIndex++;
-    } else {
-      currentIndex = 0; // Loop back to the first set
-    }
+    currentIndex = (currentIndex + 1) % totalGroups; // 循环到下一个
     updateSlider();
   }
 
   function prevSlide() {
-    if (currentIndex > 0) {
-      currentIndex--;
-    } else {
-      currentIndex = totalGroups - 1; // Cycle to the last group
-    }
+    currentIndex = (currentIndex - 1 + totalGroups) % totalGroups; // 循环到上一个
     updateSlider();
   }
 
   function startAutoSlide() {
-    slideInterval = setInterval(nextSlide, 3000);
+    slideInterval = setInterval(nextSlide, 3000); // 每3秒切换一次
   }
 
   function stopAutoSlide() {
     clearInterval(slideInterval);
   }
 
-  // Calling updateSlider() as soon as the page loads ensures that the first group is displayed from the beginning.
+  // 初始化轮播
   updateSlider();
   startAutoSlide();
 
-  // Left and right arrow click events
+  // 左右箭头点击事件
   leftArrow.addEventListener("click", function () {
     stopAutoSlide();
     prevSlide();
@@ -55,43 +48,22 @@ document.addEventListener("DOMContentLoaded", function () {
     startAutoSlide();
   });
 
-  // Stop auto-rotation on mouse hover, continue after moving away
+  // 鼠标悬停时停止轮播，移开后继续
   imgGroup.addEventListener("mouseover", stopAutoSlide);
   imgGroup.addEventListener("mouseout", startAutoSlide);
 });
 
-
-// 获取按钮
+// 返回顶部按钮逻辑
 const backToTopBtn = document.getElementById("backToTopBtn");
 
 // 页面滚动时显示/隐藏按钮
 window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    backToTopBtn.style.display = "block"; // 滚动超过100px显示按钮
+    backToTopBtn.style.display = "block";
   } else {
-    backToTopBtn.style.display = "none"; // 否则隐藏按钮
+    backToTopBtn.style.display = "none";
   }
-}
-
-// 获取按钮
-const backToTopBtn = document.getElementById("backToTopBtn");
-
-// 页面滚动时显示/隐藏按钮
-window.onscroll = function () {
-  scrollFunction();
 };
-
-function scrollFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    backToTopBtn.style.display = "block"; // 滚动超过100px显示按钮
-  } else {
-    backToTopBtn.style.display = "none"; // 否则隐藏按钮
-  }
-}
 
 // 点击按钮返回顶部
 function topFunction() {

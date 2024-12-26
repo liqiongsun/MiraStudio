@@ -718,33 +718,45 @@ flex: 1;
     text-align: left; 
   }
   .nav ul {
-    gap: 6px;
+    gap: 15px;
   }
   .nav-link {
     font-size: 14px;
     font-weight: 350;
   }
-  .banner-title {
-    font-size: 1.8rem; 
+  .mountain-1 .banner-title {
+    font-size: 0.8rem; 
     text-align: left; 
+    margin-bottom: 4px;
   }
 
-  .banner-subtitle {
-    font-size: 1.2rem;
-    text-align: center;
+  .mountain-1 .banner-subtitle {
+    font-size: 0.5rem;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.2;
   }
 
-  .banner-note {
-    font-size: 1rem; 
-    text-align: center;
-    margin-top: 10px;
+  .mountain-1 .banner-note {
+    font-size: 0.6rem; 
+    text-align: left;
+    margin-top: 2px;
+    margin-bottom: 0;
   }
 
   .banner-button {
-    font-size: 14px; 
-    padding: 12px 20px; 
+    margin-top: 4px;
+    padding: 4px 10px;
+    font-size: 8px;
   }
-
+  .mountain-1 .banner-content{
+    position: absolute;
+    top: 5%; 
+    left: 50%; 
+    text-align: left;
+    max-width: 48%;
+  }
   .mountain-1 {
     margin: 20px 0;
   }
@@ -770,34 +782,12 @@ flex: 1;
     max-width: 100%; 
   }
 
- 
-  .banner-title {
-    font-size: 1.8rem; 
-  }
-
-  .banner-subtitle {
-    font-size: 1rem;
-  }
-
- 
-  .banner-button {
-    font-size: 14px; 
-    padding: 12px 16px; 
-  }
-
-
   .mountain-1 {
     margin: 20px 0;
   }
 
   .mountain-1 img {
     width: 100%;
-  }
-
- 
-  .map-content {
-    flex-direction: column; 
-    gap: 20px; 
   }
 
   .map {
@@ -1443,7 +1433,7 @@ video {
   }
 
   .language-content {
-    top: 45%;
+    top: 40%;
     left: 10%;
     transform: translateY(-50%);
     text-align: left;
@@ -1912,12 +1902,12 @@ video {
 }
 
 /* 加粗内容 */
-.banner-content b {
+.mountain-2 .banner-content b {
   display: block;
   margin-top: 10px;
   font-size: 16px;
 }
-.banner-content{
+.mountain-2 .banner-content{
   position: absolute;
   top: 45%;
   left: 55%;
@@ -1928,7 +1918,7 @@ video {
 .screen2 {
   position: absolute;
   top: 20.5%;
-  left: 6%;
+  left: 6.7%;
   width: 35.5%; 
   height: 46.5%; 
   overflow: hidden; 
@@ -1990,7 +1980,7 @@ video {
 .screen {
   position: absolute;
   top: 20.5%;
-  left: 57.2%;
+  left: 56.4%;
   width: 35.5%; 
   height: 46.5%; 
   overflow: hidden; 
@@ -2045,7 +2035,6 @@ video {
 
   .banner-content, .banner-content2 {
     top: 10%;
-    left: 5%;
     transform: translateY(0); /* Adjust position for readability */
     max-width: 50%; /* Make text container full width */
     text-align: left; /* Center-align text */
@@ -2103,12 +2092,6 @@ video {
     height: auto; /* Maintain aspect ratio */
   }
 }
-
-
-
-
-
-
 
 
 

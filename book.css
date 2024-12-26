@@ -324,12 +324,16 @@ footer {
   }
 
   .discounts-section {
-    grid-template-columns: 1fr; /* 单列布局 */
+    grid-template-columns: 1fr !important; /* 单列布局 */
     gap: 15px; /* 增加图片间距 */
   }
-
+  .book {
+    width: 100%; /* 让书籍容器占满屏幕宽度 */
+    height: auto;
+  }
   .book img {
     max-width: 100%; /* 图片全宽 */
+    height: auto;
     margin-bottom: 10px; /* 缩小图片间距 */
   }
 
@@ -338,9 +342,11 @@ footer {
   }
 
   .add-to-cart {
-    width: 100%; /* 按钮全宽 */
     font-size: 0.9rem;
     padding: 8px;
+    max-width: 450px;
+    gap: 60px;
+    margin-top: 20px;
   }
 }
 

@@ -53,18 +53,20 @@ img {
   height: auto;
 }
 #container-main {
-  width: 1600px;
+  width: 100%;
+  max-width: 1600px;
   height: 790px;
-  z-index: ;
   position: relative;
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
   color: white;
+  background-size: cover;
+  background-position: center;
+  margin: 25px auto;
   /* Apply the same background properties to the container */
   background-image: url("../img/background.png");
-  margin: 50px 60px;
+ overflow: hidden;
   border-radius: 20px;
-  --border-width: 1px;
   border: 1px solid rgb(153, 153, 153);
 }
 /*--------------------------nav-top------------------*/
@@ -480,3 +482,41 @@ img {
   filter: drop-shadow(0 0 20px rgba(26, 20, 139, 0.8));
 }
 */
+.back-to-home {
+  position: fixed;
+  bottom: 10px;
+  right: 800px;
+  z-index: 1000;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 10px;
+}
+
+.back-to-home button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #071d5a;
+  color: rgb(207, 207, 207);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-home button:hover {
+  background-color: #ff8c00;
+}
+
+.robot-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.weather-widget {
+  text-align: center;
+  margin: 20px;
+}
+
+.weather-icon {
+  width: 50px;
+  height: 50px;
+}

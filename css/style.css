@@ -1435,32 +1435,32 @@ video {
 .l-phone2{
   margin:60px 0;
 }
-/*-----------language media---------*/
-@media screen and (min-width: 468px) and (max-width: 768px) {
+/*----------------------language media---------------*/
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .language-1 {
     height: auto;
     margin: 30px 0;
   }
 
   .language-content {
-    top: 40%;
-    left: 15%;
+    top: 45%;
+    left: 10%;
     transform: translateY(-50%);
     text-align: left;
-    max-width: 90%;
+    max-width: 50%;
     margin-top: 20px;
   }
 
   .language-title {
     font-size: 18px;
-    line-height: 1.2;
+    line-height: 1;
     margin-bottom: 8px;
   }
 
   .language-subtitle {
-    max-width: 50%;
-    font-size: 10px; 
-    line-height: 1.4;
+    max-width: 70%;
+    font-size: 8px; 
+    line-height: 1;
     
     margin-top: 0;
   }
@@ -1469,6 +1469,10 @@ video {
     object-fit: contain;
     max-width: 100%; 
     height: auto; 
+  }
+  .language-p{
+    font-size: 6px;
+    max-width: 70%;
   }
 
   .carousel-container {

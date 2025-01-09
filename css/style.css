@@ -108,52 +108,52 @@ p {
 }
 
 /*-------------------banner---------------------*/
-
 .hero-section {
- 
   display: flex;
   flex-direction: row;
-  align-items: left;
-  justify-content: center;
-  margin-left: 4rem;
-  margin-top:4rem ;
+  align-items: center; 
+  justify-content: center; 
+  margin: 3rem auto; 
   color: #272727;
-  gap: 5rem;
+  gap: 5rem; 
+  max-width: 1280px; 
+  padding: 0 2rem; 
 }
 
-.hero-text{
-  max-width: 40%;
+.hero-text {
+  max-width: 50%; 
   text-overflow: clip;
-}
-.hey{
-  font-size: 40px;
-  font-weight: 200;
-  text-align: left;
-  margin-bottom: 30px;
-}
-.my-intro{
-  font-size: 24px;
-  font-weight: 200;
-  line-height: 1.5;
-  text-align: left;
-  word-wrap: break-word;
-  margin: 0;
-}
-/* 右侧图片容器 */
-.deigner {
-  flex: 1;
-  width: 50%; /* 右侧占50%宽度 */
-  padding: 0;
-  right: 100px;
-  
+  margin: 0; 
+  text-align: left; 
 }
 
-/* 图片样式 */
-.deigner img {
-  max-width: 450px; /* 限制图片最大宽度 */
-  height: auto; /* 保持比例 */
-  margin: 0; /* 清除默认外边距 */
+.hey {
+  font-size: 2.5rem; 
+  font-weight: 300; 
+  text-align: left;
 }
+
+.my-intro {
+  font-size: 1.2rem; 
+  font-weight: 200;
+  line-height: 1.6; 
+  word-wrap: break-word;
+  margin: 0; 
+}
+
+.designer {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-shrink: 0; 
+}
+
+.designer img {
+  max-width: 400px; 
+  height: auto; 
+  margin: 0; 
+}
+
 @media screen and (max-width: 768px) {
   .header {
     height: 60px;
@@ -2084,6 +2084,78 @@ video {
     overflow: hidden; 
     border: 2px solid #000;
     border-radius: 4px;
+  }
+
+  .scroll-image img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1520px) {
+ 
+  .project{
+    max-width: 90%;
+  }
+    .mountain-2 {
+      height: auto; /* Adjust height for smaller screens */
+    }
+  
+    .mountain-2 img {
+      width: 100%;
+      height: auto; /* Maintain aspect ratio */
+    }
+  
+    .banner-content, .banner-content2 {
+      top: 12%;
+      transform: translateY(0); /* Adjust position for readability */
+      max-width: 50%; /* Make text container full width */
+      text-align: left; /* Center-align text */
+    }
+    .g-title {
+      font-size: 2.5rem;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+    .g-1{
+      font-size: 1.8rem;
+    }
+    .g-subtitle {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+  
+    .icon-button {
+      font-size: 0.8rem;
+      padding: 8px 14px;
+      margin-top: 20px;
+    }
+  .banner-content{
+    left: 45%;
+  }
+  .banner-content2{
+    max-width: 45%;
+  }
+  .screen {
+    position: absolute;
+    top: 18%;
+    left: 55%;
+    width: 31.5%; /* Adjust screen size */
+    height: 48%; 
+    overflow: hidden;
+    border: 3px solid #000;
+    border-radius: 6px;
+  }
+
+  .screen2 {
+    position: absolute;
+    top: 18%;
+    left: 12.5%;
+    width: 31.5%;
+    height: 48%;
+    overflow: hidden;
+    border: 3px solid #000;
+    border-radius: 6px;
   }
 
   .scroll-image img {

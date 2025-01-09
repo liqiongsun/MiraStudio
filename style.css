@@ -2072,15 +2072,15 @@ video {
 .banner-content2{
   max-width: 45%;
 }
-  .screen {
-    position: absolute;
-    top: 20.5%;
-    left: 55.6%;
-    width: 30%; 
-    height: 44%; 
-    overflow: hidden; 
-    border: 2px solid #000;
-    border-radius: 4px;
+.screen {
+  position: absolute;
+  top: 20.5%;
+  left: 55.6%;
+  width: 30%; 
+  height: 44%; 
+  overflow: hidden; 
+  border: 1px solid #000;
+  border-radius: 4px;
 }
   .screen2 {
     position: absolute;

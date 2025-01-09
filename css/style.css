@@ -1311,9 +1311,9 @@ video {
 }
 
 .language-content {
-  max-width: 35%;
+  max-width: 33%;
   position: absolute; 
-  top: 45%; 
+  top: 47%; 
   left: 15%; 
   transform: translateY(-50%); 
   text-align: left;
@@ -1338,7 +1338,7 @@ video {
   font-weight: 400;
   font-style: normal;;
   font-size: 24px;
-  line-height: 1.5;
+  line-height: 1.2;
   font-weight: 500;
   margin: 0;
   max-width: 600px;
@@ -1349,8 +1349,8 @@ video {
   text-fill-color: transparent;
 }
 .language-p{
-  color: #283e63;
-  font-size: 0.8rem;
+  color: #0c4681;
+  font-size: 0.9rem;
 }
 /*--------------------------language carousel---------------*/
 /* Carousel Container */

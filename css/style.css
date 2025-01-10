@@ -1855,7 +1855,7 @@ video {
 
 .banner-content2 {
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 5%;
   transform: translateY(-50%);
   max-width: 40%; 
@@ -1908,7 +1908,7 @@ video {
 }
 .mountain-2 .banner-content{
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 55%;
   transform: translateY(-50%);
   max-width: 40%; /* 限制文字区域宽度 */

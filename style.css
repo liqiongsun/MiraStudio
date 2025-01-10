@@ -1860,9 +1860,9 @@ video {
 }
 
 
-.banner-content2 {
+.mountain-2.banner-content2 {
   position: absolute;
-  top: 45%;
+  top: 25%;
   left: 5%;
   transform: translateY(-50%);
   max-width: 40%; 
@@ -1907,7 +1907,7 @@ video {
   color: #ff9d48; /* Change color on hover */
 }
 
-/* 加粗内容 */
+
 .banner-content b {
   display: block;
   margin-top: 10px;
@@ -1915,11 +1915,11 @@ video {
 }
 .banner-content{
   position: absolute;
-  top: 45%;
+  top: 35%;
   left: 55%;
   transform: translateY(-50%);
-  max-width: 40%; /* 限制文字区域宽度 */
-  color: #fff; /* 白色字体提升对比度 */
+  max-width: 40%; 
+  color: #fff;
 }
 .screen2 {
   position: absolute;

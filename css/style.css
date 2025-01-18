@@ -2349,6 +2349,41 @@ video {
   transform: scale(1.1) rotate(5deg);
   box-shadow: 0 12px 30px rgba(85, 37, 131, 0.3);
 }
+/* 基础样式 */
+.email-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.email-link {
+  width: 40px; 
+  transition: transform 0.3s ease;
+}
+
+.email-text {
+  display: none; 
+  position: absolute;
+  top: 50px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #7500b9;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 悬停效果 */
+.email-container:hover .email-link {
+  transform: scale(1.2); 
+}
+
+.email-container:hover .email-text {
+  display: block; 
+}
 
 /* 动画效果 */
 @keyframes fadeIn {

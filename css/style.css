@@ -1551,7 +1551,7 @@ video {
 
 
 #user{
-  background-color: #fdfbf8;
+  background-color: #fff9f4;
 }
 .five-phones{
   display: flex;
@@ -1614,22 +1614,26 @@ video {
 
 .insights{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color:#584839;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: left;
+  color:#9a9896;
   line-height: 2;
   margin: 0 auto;
+  gap: 16px;
 }
 .ins-text{
-  background-color: #e6d0c3;
+  flex: 1;
+  background-color: #eaeaea;
   border-radius: 15px;
   font-weight: 300;
-  color: #584839;
+  color: #544b43;
   padding: 2rem;
   border-radius: 14px;
-  margin-bottom: 2rem;
-  width: 70%;
+  border: 1px solid #cecece; /* 边框 */
+  box-shadow: 0 2px 5px rgba(44, 44, 44, 0.1); /* 添加阴影 */
+  margin-bottom: 16px;
+  width: 20%;
 }
 @media (max-width: 768px) {
   .insights {

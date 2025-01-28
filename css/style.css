@@ -206,6 +206,13 @@ p {
     max-width: 80%; /* 限制图片宽度为容器的80% */
     height: auto; /* 保持比例 */
   }
+  #backToTopBtn {
+    right: 10px; 
+    font-size: 12px; 
+    background-color: #f9cf15; 
+    padding: 8px; 
+    border-radius: 5px; 
+  }
 }
 
 /*---------------------------portfolio------------------------*/
@@ -363,6 +370,8 @@ p {
 
 @media (max-width: 768px) {
   .portfolio {
+    max-width: 90%;
+    margin: 0 auto;
     padding: 30px 10px; 
     background-color: #f9f9f9;
   }
@@ -2540,9 +2549,6 @@ video {
   h3,
   h4 {
     font-size: 1.2rem;
-  }
-  .portfolio {
-    width: 90%;
   }
   .title {
     font-size: 1.1rem;

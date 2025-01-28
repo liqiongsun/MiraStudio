@@ -2229,6 +2229,9 @@ video {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .graphic{
+    padding: 30px 30px;
+  }
   .row-1 {
     flex-wrap: wrap; /* 小屏幕时图片自动换行 */
     justify-content: space-between;

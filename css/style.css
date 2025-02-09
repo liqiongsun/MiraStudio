@@ -501,7 +501,7 @@ hr{
 .project-discription p{
 margin:0 0;
 flex: 1; 
-  max-width: 80%;
+max-width: 80%;
 }
 /* ----------------------mountain banner and text------------ */
 .mountain-1 {

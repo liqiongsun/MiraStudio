@@ -324,14 +324,17 @@ p {
 
 /* Card Title */
 .card-title {
+  font-family: "Oswald", serif;
   font-size: 1.3rem;
+  letter-spacing: 0.6px;
   font-weight: 400;
+  color: #393939;
   margin: 25px 12px 0 0;
   transition: color 0.3s ease;
 }
 
 .card:hover .card-title {
-  color: #ff9800; 
+  color: #e3c18a; 
 }
 
 /* Card Subtitle */

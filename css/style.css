@@ -476,9 +476,9 @@ hr{
 .project-name{
   color: #212121;
   font-family: "Krub", serif;
-  font-weight: 650;
+  font-weight: 600;
   font-style: normal;
-  font-size: 3rem;
+  font-size: 2.6rem;
   text-align: left;
   margin: 80px 0 0 0;
 }
@@ -1564,7 +1564,7 @@ video {
 
 
 #user{
-  background-color: #fff9f4;
+  background-color: #fffcf3;
 }
 .five-phones{
   display: flex;
@@ -1637,16 +1637,16 @@ video {
 }
 .ins-text{
   flex: 1;
-  background-color: #eaeaea;
-  border-radius: 15px;
+  background-color: #f7f5ed;
   font-weight: 300;
   color: #544b43;
-  padding: 2rem;
+  padding: 1.2rem;
   border-radius: 14px;
-  border: 1px solid #cecece; /* 边框 */
-  box-shadow: 0 2px 5px rgba(44, 44, 44, 0.1); /* 添加阴影 */
-  margin-bottom: 16px;
+  border: 1px solid #ede8dd;
+ 
+  margin-bottom: 12px;
   width: 20%;
+  
 }
 @media (max-width: 768px) {
   .insights {

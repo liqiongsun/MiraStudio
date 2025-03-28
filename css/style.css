@@ -19,7 +19,7 @@ img {
   height: auto;
 }
 p {
-  text-align: justify;
+  text-align: left;
   color: #242424;
   line-height: 1.5;
 }
@@ -334,7 +334,7 @@ p {
 }
 
 .card:hover .card-title {
-  color: #b8812a; 
+  color: #d9962b; 
 }
 
 /* Card Subtitle */
@@ -1632,12 +1632,14 @@ video {
   align-items: left;
   color:#9a9896;
   line-height: 2;
-  margin: 0 auto;
   gap: 16px;
+  flex-wrap: wrap;
+  
 }
 .ins-text{
   flex: 1;
-  background-color: #f7f5ed;
+  min-height: 220px;
+  justify-content: space-between;
   font-weight: 300;
   color: #544b43;
   padding: 1.2rem;
@@ -2660,4 +2662,40 @@ video {
 
 .back-to-home a:hover {
   text-decoration: underline;
+}
+
+
+/*------------flavory--------------*/
+.design-question {
+  font-family: 'Halant', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #b14422;
+  line-height: 1.6;
+  margin: 2em auto;
+}
+.design-question-block hr {
+  width: 80px;
+  margin: 3em auto;
+  border: 1px solid #bdbdbd;
+}
+.capstone-banner{
+  margin: 3rem 0;
+
+}
+.insights{
+  text-align: left !important;
+}
+.use-needs{
+  margin: 3rem 0;
+}
+.trust-card{
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);}
+
+.social{
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+.simple{
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }

@@ -2666,6 +2666,50 @@ video {
 
 
 /*------------flavory--------------*/
+.capstone-banner {
+  overflow: hidden; /* 防止放大超出区域 */
+}
+
+.capstone-banner a img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.capstone-banner a:hover img {
+  transform: scale(1.03); /* 微微放大 */
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+.capstone-banner2 {
+  overflow: hidden;
+  margin: 3rem 0;
+  animation: fadeZoomIn 1.2s ease-out both;
+}
+
+.capstone-banner2 img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  transition: transform 0.6s ease, box-shadow 0.4s ease;
+}
+
+/* 悬停动效 */
+.capstone-banner2:hover img {
+  transform: scale(1.02) translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* 初始加载动画 */
+@keyframes fadeZoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 .design-question {
   font-family: 'Halant', serif;
   font-size: 2rem;
@@ -2800,6 +2844,7 @@ video {
   text-align: center;
   margin-bottom: 4rem;
   color: #222;
+  margin-top: 2rem;
 }
 
 .c-persona {
@@ -2914,7 +2959,9 @@ video {
 
 }
 
-
+.img-container img{
+  margin-top: 2rem;
+}
 
 .insights-grid {
   display: flex;
@@ -2967,3 +3014,100 @@ video {
   transform: scale(1.03);
 }
 
+.img-container-with-btn {
+  position: relative;
+  background-image: url("../img/loadpage.png");
+  background-size: cover;
+  background-position: center;
+  height: 600px; /* 根据你的图片高度调节 */
+}
+
+.img-overlay {
+  position: absolute;
+  bottom: 100px;
+  left: 68%;
+  transform: translateX(-50%);
+}
+
+.prototype-btn-inside {
+  display: inline-block;
+  padding: 0.9rem 1.5rem;
+  background-color: #ffffff;
+  color: #CD3F25;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.prototype-btn-inside:hover {
+  background-color: #FED150;
+  color: rgb(255, 255, 255);
+  transform: translateY(-2px);
+}
+.carousel-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  gap: 0; /* 无空隙 */
+  margin-top: 2rem;
+}
+.prototyping-image img{
+  margin-top: 2rem;
+}
+.carousel-left {
+  flex: 0 0 599px;
+  overflow: hidden;
+  position: relative;
+  margin-right: 0; /* 贴近右边 */
+}
+
+.carousel-track {
+  display: flex;
+  animation: scrollLoop 40s linear infinite;
+}
+
+.slide {
+  flex: 0 0 600px;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+
+
+}
+
+.carousel-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start; /* ✅ 让它贴近左边轮播 */
+  align-items: center;
+  padding-left: 0;  /* ✅取消内边距 */
+}
+
+.carousel-right img {
+  max-width: 100%;  /* 宽度由父级控制 */
+  height: auto;
+  display: block;
+  
+}
+
+/* 无限滚动动画 */
+@keyframes scrollLoop {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-4038px); } /* 673px * 6 slides */
+}
+
+.paused .carousel-track {
+  animation-play-state: paused;
+}
+.long-img img{
+  margin: 2em 0;
+
+}

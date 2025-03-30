@@ -40,9 +40,12 @@
              </p>        
           </div>
         </section>
-        <img class="capstone-banner" src="img/Capstone-banner.png" alt="banner">
 
-      <section class="project">
+        <section class="capstone-banner2">
+          <img src="img/Capstone-banner.png" alt="banner">
+        </section>
+
+        <section class="project">
         <hr>
         <div class="role-content">
           <div class="role">
@@ -254,10 +257,64 @@
           <img src="img/journey-map.png" alt="user flow">
         </div>
       </section>
+      <section class="project">
+        <h3 class="sub-title">Low-Fidelity Wireframes</h3>
+        <div class="img-container">
+          <img src="img/wireframe-intro.png" alt="Wireframes">
+          <img src="img/low-wireframes.png" alt="wreframes">
+        </div>
+      </section>
+      <section class="project">
+        <h3 class="sub-title">High-Fidelity MVP Prototype</h3>
+        <div class="img-container-with-btn">
+          <div class="img-overlay">
+            <a href="https://www.figma.com/proto/kAkdOdMSimFDxvdsAPS0Dp/CAPSTONES?page-id=582%3A28208&node-id=582-28210&p=f&viewport=-189%2C-287%2C0.76&t=1okls4yTh3QxJVfS-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=582%3A28210" target="_blank" class="prototype-btn-inside">
+              ▶ View Interactive Prototype
+            </a>
+          </div>
+        </div> 
+      </section>
+      <section class="project">
+        <div class="prototyping-image">
+          <img src="img/homepage.png" alt="homepage">
+        </div>
+        <section class="carousel-section">
+          <div class="carousel-left" id="carousel">
+            <div class="carousel-track">
+              <div class="slide"><img src="img/discover.svg" alt="Discover" /></div>
+              <div class="slide"><img src="img/story.svg" alt="Story" /></div>
+              <div class="slide"><img src="img/flavor.svg" alt="Flavor" /></div>
+              <div class="slide"><img src="img/trust.svg" alt="Trust" /></div>
+              <div class="slide"><img src="img/chalenge.svg" alt="Challenge" /></div>
+              <div class="slide"><img src="img/discover.svg" alt="Loop Back" /></div> <!-- 🔁 Loop back -->
+              <div class="slide"><img src="img/discover.svg" alt="Discover Again" /></div>
+              <div class="slide"><img src="img/story.svg" alt="Story Again" /></div>
+            </div>
+          </div>
+       
+          <div class="carousel-right">
+            <img src="img/fixed-right.svg" alt="Smart Flow Info" />
+          </div> 
+        </section>
+        
+        <script>
+          const carousel = document.getElementById('carousel');
+        
+          carousel.addEventListener('mouseenter', () => {
+            carousel.classList.add('paused');
+          });
+        
+          carousel.addEventListener('mouseleave', () => {
+            carousel.classList.remove('paused');
+          });
+        </script>
+      </section>
+      <div class="long-img">
+          
+        <img src="img/long-challenge.svg" alt="challenge" />
+        <img src="img/long-community.svg" alt="community" />
 
-        
-        
-      
+      </div>
       <button onclick="topFunction()" id="backToTopBtn" title="返回顶部">
         ↑
       </button>

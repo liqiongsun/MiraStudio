@@ -21,7 +21,7 @@ img {
 p {
   text-align: left;
   color: #242424;
-  line-height: 1.5;
+  line-height: 2;
 }
 /* the botton of back to top */
 #backToTopBtn {
@@ -461,7 +461,7 @@ footer {
 hr{
   border: none; 
   border-top: 1px dashed #2b2b2b;
-  margin: 30px 0; 
+  margin: 2em 0; 
   height: 0; 
 }
 .project{
@@ -1629,25 +1629,25 @@ video {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: left;
+  align-items: stretch;
   color:#9a9896;
-  line-height: 2;
   gap: 16px;
-  flex-wrap: wrap;
-  
+
+  min-height: 230px;
 }
 .ins-text{
   flex: 1;
-  min-height: 220px;
   justify-content: space-between;
-  font-weight: 300;
+  
   color: #544b43;
   padding: 1.2rem;
   border-radius: 14px;
   border: 1px solid #ede8dd;
- 
+  flex-direction: column;
   margin-bottom: 12px;
   width: 20%;
+  line-height: 2;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   
 }
 @media (max-width: 768px) {
@@ -2684,18 +2684,286 @@ video {
   margin: 3rem 0;
 
 }
-.insights{
-  text-align: left !important;
-}
+
 .use-needs{
   margin: 3rem 0;
 }
-.trust-card{
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);}
+.trust {
+  background-color: #f9f5f2; /* 柔和的米色调，代表信任与温暖 */
+  
+}
 
-.social{
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+.social {
+  background-color: #f3f8fb; /* 淡蓝灰色，突出互动感和社交性 */
+  
 }
-.simple{
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+
+.simple {
+  background-color: #f7f9f3; /* 淡绿色调，象征简洁、清新、健康 */
+  
 }
+.trust, .social, .simple {
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+/* Hover 效果 */
+.trust:hover {
+  background-color: #fff9f5;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.social:hover {
+  background-color: #eef6fa;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.simple:hover {
+  background-color: #f3f8ee;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+#research-process{
+  background-color: #f2f2f2;
+  padding: 3rem 0;
+  margin: 3rem 0;
+}
+.survey {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.survey-right {
+  flex: 1 1 45%;
+  max-width: 530px;
+
+}
+.survey-left {
+  flex: 1 1 50%;
+  max-width: 500px;
+  padding-right: 1rem; 
+}
+
+.survey-title {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  margin-top: 0;
+  line-height: 1.3;
+  color: #1a1a1a;
+  padding-left: 1.8rem;
+}
+
+.survey-title::before {
+  content: "";
+  position: absolute;
+  top: 0.2rem;
+  left: 0;
+  width: 10px;
+  height: 1.2em;
+  background-color: #c8461f; /* 你图中那种砖红色 */
+  border-radius: 2px;
+}
+
+.survey-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333333;
+  margin-bottom: 1.8rem;
+  max-width: 95%;
+}
+
+.survey-smalltext {
+  font-size: 0.95rem;
+  color: #7a7a7a;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+.sub-container {
+  padding: 4rem 0; /* 取消左右 padding */
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.sub-title {
+  font-family: 'Halant', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #222;
+}
+
+.c-persona {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  
+  width: 100vw;              /* 占满整屏 */
+  margin: 0;
+  padding: 0;
+}
+
+.c-persona img {
+  width: 50vw;               
+  height: auto;
+  border-radius: 0;          
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.research-findings{
+  max-width: 900px;
+  margin: 0 auto;
+}
+.competitive-section {
+  padding: 4rem 2rem;
+  background-color: #f2f2f2;
+  max-width: 62%;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: 'Halant', serif;
+}
+
+.section-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.competitive-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.comp-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  flex: 1 1 300px;
+  max-width: 360px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.comp-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.comp-card h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  color: #b14422;
+}
+
+.comp-card p {
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.key-takeaways {
+  margin-top: 3rem;
+  background: #f8f5f5;
+  padding: 1.5rem 2rem;
+  border-left: 6px solid #b14422;
+  border-radius: 8px;
+}
+
+.key-takeaways h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #b14422;
+}
+
+.key-takeaways ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.key-takeaways li {
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+}
+
+.insights-section {
+
+  max-width: 62%;
+  margin: 0 auto;
+
+}
+
+
+
+.insights-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.insight-card {
+  flex: 1 1 480px;
+  background: #fff;
+  padding: 1.8rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.insight-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.insight-card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.insight-card li {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #222;
+}
+.strategy-three {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* 自动换行，适配移动端 */
+  padding: 2rem 0;
+}
+
+.strategy-three img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.strategy-three img:hover {
+  transform: scale(1.03);
+}
+

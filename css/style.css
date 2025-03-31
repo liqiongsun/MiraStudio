@@ -2831,20 +2831,16 @@ video {
   line-height: 1.6;
   margin-top: 1rem;
 }
-.sub-container {
-  padding: 4rem 0; /* 取消左右 padding */
-  margin: 0 auto;
-  max-width: 100%;
-}
+
 
 .sub-title {
   font-family: 'Halant', serif;
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 4rem;
+  margin-top: 4.5rem;
+  margin-bottom: 4.5rem;
   color: #222;
-  margin-top: 2rem;
 }
 
 .c-persona {
@@ -2872,7 +2868,7 @@ video {
   margin: 0 auto;
 }
 .competitive-section {
-  padding: 4rem 2rem;
+  
   background-color: #f2f2f2;
   max-width: 62%;
   margin: 0 auto;
@@ -2882,6 +2878,7 @@ video {
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
+  margin-top: 4rem;
   margin-bottom: 1rem;
   font-family: 'Halant', serif;
 }
@@ -2960,7 +2957,9 @@ video {
 }
 
 .img-container img{
-  margin-top: 2rem;
+
+  border-radius: 20px;
+  
 }
 
 .insights-grid {
@@ -2972,7 +2971,12 @@ video {
 
 .insight-card {
   flex: 1 1 480px;
-  background: #fff;
+  background:radial-gradient(
+    circle,
+    #CD3F25 23%,
+    #CD3F25 71%,
+    #C73E25 100%
+  );
   padding: 1.8rem 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
@@ -2992,7 +2996,7 @@ video {
   margin-bottom: 1rem;
   font-size: 1.05rem;
   line-height: 1.6;
-  color: #222;
+  color: #ffffff;
 }
 .strategy-three {
   display: flex;
@@ -3024,8 +3028,8 @@ video {
 
 .img-overlay {
   position: absolute;
-  bottom: 100px;
-  left: 68%;
+  bottom: 170px;
+  left: 67%;
   transform: translateX(-50%);
 }
 

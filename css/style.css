@@ -3112,6 +3112,86 @@ video {
   animation-play-state: paused;
 }
 .long-img img{
-  margin: 2em 0;
+  margin-top:2rem;
 
+}
+.key-singhts-text {
+  text-align: center;
+  padding: 3rem 6rem;
+  background-color: #edebeb;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 16px;
+  line-height: 1.6;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+  font-size: 1.1rem;
+  font-family: 'Manrope', sans-serif;
+
+  /* 👇 动画效果 */
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+  transition: transform 0.3s ease;
+}
+
+.key-singhts-text:hover {
+  transform: scale(1.02);
+}
+.key-singhts-text ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.key-singhts-text li {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* 👇 关键帧动画 */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.video-section {
+  padding: 4rem 0;
+
+  text-align: center;
+}
+
+.video-description {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Manrope', sans-serif;
+  color: #333;
+}
+
+.video-description h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.video-description p {
+  max-width: 900px;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #868686;
+}
+
+.video-wrapper {
+  max-width: 1100px;
+  margin: 4rem auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
 }

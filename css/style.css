@@ -2579,6 +2579,7 @@ video {
     font-size: 1.3rem;
     font-weight: 300;
   }
+ 
   .me{
     width: 100%;
   }
@@ -2665,7 +2666,7 @@ video {
 }
 
 
-/*------------flavory--------------*/
+/*------------------------------flavory----------------------------*/
 .capstone-banner {
   overflow: hidden; /* 防止放大超出区域 */
 }
@@ -2824,7 +2825,11 @@ video {
   margin-bottom: 1.8rem;
   max-width: 95%;
 }
+@media (max-width: 768px) {
+  .survey-text {
+    font-size: 1rem;
 
+  }}
 .survey-smalltext {
   font-size: 0.95rem;
   color: #7a7a7a;
@@ -2863,10 +2868,7 @@ video {
   padding: 0;
   display: block;
 }
-.research-findings{
-  max-width: 900px;
-  margin: 0 auto;
-}
+
 .competitive-section {
   
   background-color: #f2f2f2;
@@ -2889,6 +2891,14 @@ video {
   margin: 0 auto 2.5rem;
   font-size: 1.1rem;
   color: #444;
+}
+@media (max-width: 768px) {
+  .section-intro {
+    max-width: 700px;
+  }
+    .comp-card {
+      max-width: 360px;
+}
 }
 
 .competitive-grid {
@@ -2955,6 +2965,10 @@ video {
   margin: 0 auto;
 
 }
+@media (max-width: 768px) {
+  .insights-section {
+    max-width: 92%;
+  }}
 
 .img-container img{
 
@@ -3032,6 +3046,33 @@ video {
   bottom: 170px;
   left: 67%;
   transform: translateX(-50%);
+}
+@media (max-width: 768px) {
+  .img-container-with-btn {
+    height: auto; /* 允许根据内容调整高度 */
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 16 / 9;
+    }
+  
+
+  .img-overlay {
+    position: absolute;
+    bottom: 80px;
+    left: 73%;
+    transform: translateX(-50%);
+    width: 40%;
+    text-align: center;
+  }
+
+  .prototype-btn-inside {
+    font-size: 0.8rem !important; /* 强制覆盖原字体大小 */
+    padding: 0.6rem 0.6rem !important;
+    line-height: 1.4;
+    white-space: nowrap; /* 防止按钮内容换行 */
+  
+  }
 }
 
 .prototype-btn-inside {
@@ -3252,3 +3293,5 @@ video {
     transform: translateY(0);
   }
 }
+
+

@@ -3024,6 +3024,7 @@ video {
   background-size: cover;
   background-position: center;
   height: 600px; /* 根据你的图片高度调节 */
+  border-radius: 16px;
 }
 
 .img-overlay {
@@ -3062,6 +3063,7 @@ video {
 }
 .prototyping-image img{
   margin-top: 2rem;
+  border-radius: 16px;
 }
 .carousel-left {
   flex: 0 0 599px;
@@ -3118,7 +3120,7 @@ video {
 .key-singhts-text {
   text-align: center;
   padding: 3rem 6rem;
-  background-color: #edebeb;
+  background-color: #f1f1f1;
   max-width: 1000px;
   margin: 0 auto;
   border-radius: 16px;
@@ -3126,6 +3128,7 @@ video {
   box-shadow: 0 6px 12px rgba(0,0,0,0.05);
   font-size: 1.1rem;
   font-family: 'Manrope', sans-serif;
+  border: 1px solid#e5e5e5;
 
   /* 👇 动画效果 */
   opacity: 0;
@@ -3135,7 +3138,9 @@ video {
 }
 
 .key-singhts-text:hover {
-  transform: scale(1.02);
+  transform: scale(1.12);
+  background-color: #fff6f6;
+  border: 1px solid#c6c6c6;
 }
 .key-singhts-text ul {
   list-style: none;
@@ -3156,7 +3161,7 @@ video {
   }
 }
 .video-section {
-  padding: 4rem 0;
+
 
   text-align: center;
 }
@@ -3184,8 +3189,8 @@ video {
 .video-wrapper {
   max-width: 1100px;
   margin: 4rem auto;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(80, 80, 80, 0.1);
+  border-radius: 16px;
   overflow: hidden;
 }
 
@@ -3193,5 +3198,57 @@ video {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 12px;
+  border: 1px solid rgb(83, 83, 83);
+  border-radius: 16px;
+}
+.key-learning {
+  background-color: #fbedeb;
+  padding: 4rem 2rem;
+  text-align: center;
+  font-family: 'Merienda', serif;
+  color: #c4401e;
+}
+
+.key-title {
+  font-family: 'Halant', serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.learning-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 2.5rem;
+  max-width: 800px;
+  font-family: 'Manrope', sans-serif;
+  color: #444;
+  font-size: 1.05rem;
+  line-height: 2;
+}
+
+.learning-points li {
+  margin: 0.4rem 0;
+}
+
+.final-quote {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #c4401e;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Halant', serif;
+  line-height: 1.6;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

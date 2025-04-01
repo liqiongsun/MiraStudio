@@ -3044,7 +3044,7 @@ video {
 
 .img-overlay {
   position: absolute;
-  bottom: 170px;
+  bottom: 140px;
   left: 67%;
   transform: translateX(-50%);
 }

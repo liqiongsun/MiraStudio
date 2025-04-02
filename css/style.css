@@ -2717,6 +2717,16 @@ video {
 .use-needs{
   margin: 3rem 0;
 }
+@media screen and (max-width: 520px) {
+.challenge-solution{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  gap: 16px;
+  margin: 2rem 0;
+}
+}
 .trust {
   background-color: #f9f5f2; /* 柔和的米色调，代表信任与温暖 */
   

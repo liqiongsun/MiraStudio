@@ -2830,9 +2830,14 @@ video {
   margin-bottom: 1.8rem;
   max-width: 95%;
 }
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
   .survey-text {
     font-size: 1rem;
+
+  }}
+@media (max-width: 768px) {
+  .survey-text {
+    font-size: 0.8rem;
 
   }}
 .survey-smalltext {
@@ -2899,20 +2904,10 @@ video {
 }
 @media (max-width: 1512px) {
 .comp-card {
-  
   padding: 1.2rem;
-  
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-  flex: 1 1 280px;
-  
+}
 
-}
-.competitive-grid {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  
-}
 .comp-card h3 {
   margin-top: 0;
   margin-bottom: 0.7rem;
@@ -2925,8 +2920,34 @@ video {
   font-size: 0.9rem;
   line-height: 1.6;
 }
-
 }
+@media (max-width: 1280px) {
+  .competitive-section {
+    max-width: 80%;
+  }
+
+  .competitive-grid {
+    max-width: 100%;
+  }
+  .comp-card {
+    padding: 1rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  }
+  
+  .comp-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.7rem;
+    font-size: 1.1rem;
+  
+  }
+  
+  .comp-card p {
+    margin-bottom: 0.6rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  }
 @media (max-width: 768px) {
   .competitive-section {
     max-width: 100%;
@@ -2984,7 +3005,9 @@ video {
   }
 
 }
-
+.low-wireframes{
+  margin-top: 2rem;
+}
 .img-container img{
 
   border-radius: 20px;
@@ -3289,7 +3312,9 @@ video {
     gap: 0;
     
   }
-
+  .sub-title{
+    margin: 5rem 0;
+  }
   .carousel-right img {
     max-width: 470px;
     border-top-right-radius: 16px;
@@ -3303,16 +3328,25 @@ video {
 
 /* === 适配最大宽度 1280px（13寸屏幕） === */
 @media (max-width: 1280px) {
+  .project{
+    max-width: 80%;
+  }
   .carousel-left {
+  
     flex: 0 0 490px;
   }
 
   .slide {
-    width: 520px;
+    width: 580px;
   }
 
   .carousel-right img {
-    max-width: 410px;
+    max-width: 480px;
+  }
+  .carousel-left {
+    flex: 1 1 65%;
+    max-width: 65%;
+    margin: 0 auto;
   }
 }
 
@@ -3352,22 +3386,24 @@ video {
   .carousel-section {
     padding: 1rem 0;
     max-width: 100%;
+    background: white;
   }
   .carousel-left {
     max-width: 100%;
-    border-radius: 16px;}
+    border-radius: 16px;
+  }
    
 .sub-title{
   font-size: 1.5rem;
   font-weight: 600;
   margin: 1.5rem 0;
 }
-
+.carousel-right{
+  max-width: 100%;
+}
   .carousel-right img {
     max-width: 100%;
     border-radius: 16px;
-  
-   
   }
 
   .slide {

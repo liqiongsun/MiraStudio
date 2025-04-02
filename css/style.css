@@ -2667,23 +2667,10 @@ video {
 
 
 /*------------------------------flavory----------------------------*/
-.capstone-banner {
-  overflow: hidden; /* 防止放大超出区域 */
-}
 
-.capstone-banner a img {
-  width: 100%;
-  height: auto;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.capstone-banner a:hover img {
-  transform: scale(1.03); /* 微微放大 */
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
-}
 .capstone-banner2 {
   overflow: hidden;
-  margin: 3rem 0;
+  margin: 2.5rem 0;
   border-radius: 25px;
   animation: fadeZoomIn 1.2s ease-out both;
 }
@@ -2698,7 +2685,7 @@ video {
 /* 悬停动效 */
 .capstone-banner2:hover img {
   transform: scale(1.02) translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  
 }
 
 /* 初始加载动画 */
@@ -2725,10 +2712,6 @@ video {
   width: 80px;
   margin: 3em auto;
   border: 1px solid #bdbdbd;
-}
-.capstone-banner{
-  margin: 3rem 0;
-
 }
 
 .use-needs{
@@ -2779,7 +2762,7 @@ video {
 .user-research {
   opacity: 0;
   margin-bottom: 3rem;
-  
+  border-radius: 16px;
   transform: scale(0.95);
   transition: transform 0.3s ease, opacity 0.6s ease;
 }
@@ -2787,8 +2770,12 @@ video {
 .user-research.visible {
   opacity: 1;
   transform: scale(1);
+  border-radius: 16px;
 }
-
+.user-research img {
+ 
+  border-radius: 16px;
+}
 .user-research:hover {
   transform: scale(1.03);
 }
@@ -2910,12 +2897,44 @@ video {
   font-size: 1.1rem;
   color: #444;
 }
+@media (max-width: 1512px) {
+.comp-card {
+  
+  padding: 1.2rem;
+  
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  flex: 1 1 280px;
+  
+
+}
+.competitive-grid {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  
+}
+.comp-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+  font-size: 1.1rem;
+
+}
+
+.comp-card p {
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+}
 @media (max-width: 768px) {
-  .section-intro {
-    max-width: 700px;
+  .competitive-section {
+    max-width: 100%;
   }
-    .comp-card {
-      max-width: 360px;
+
+.competitive-grid {
+  max-width: 100%;
+  flex-wrap: wrap;
 }
 }
 
@@ -2953,30 +2972,6 @@ video {
   line-height: 1.6;
 }
 
-.key-takeaways {
-  margin-top: 3rem;
-  background: #f8f5f5;
-  padding: 1.5rem 2rem;
-  border-left: 6px solid #b14422;
-  border-radius: 8px;
-}
-
-.key-takeaways h4 {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  color: #b14422;
-}
-
-.key-takeaways ul {
-  margin: 0;
-  padding-left: 1.2rem;
-}
-
-.key-takeaways li {
-  margin-bottom: 0.6rem;
-  font-size: 1rem;
-}
-
 .insights-section {
 
   max-width: 62%;
@@ -2986,7 +2981,9 @@ video {
 @media (max-width: 768px) {
   .insights-section {
     max-width: 92%;
-  }}
+  }
+
+}
 
 .img-container img{
 
@@ -3051,48 +3048,28 @@ video {
 }
 
 .img-container-with-btn {
-  position: relative;
-  background-image: url("../img/loadpage.png");
-  background-size: cover;
-  background-position: center;
-  height: 600px; /* 根据你的图片高度调节 */
+  position: relative; /* 关键点 */
+  width: 100%;
+  margin: 2rem auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.prototype-home img {
+  width: 100%;
+  display: block;
   border-radius: 16px;
 }
 
+/* 按钮定位在图片上 */
 .img-overlay {
   position: absolute;
   bottom: 140px;
   left: 67%;
   transform: translateX(-50%);
+  z-index: 2;
 }
-@media (max-width: 768px) {
-  .img-container-with-btn {
-    height: auto; /* 允许根据内容调整高度 */
-    background-position: top center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    aspect-ratio: 16 / 9;
-    }
-  
-
-  .img-overlay {
-    position: absolute;
-    bottom: 80px;
-    left: 73%;
-    transform: translateX(-50%);
-    width: 40%;
-    text-align: center;
-  }
-
-  .prototype-btn-inside {
-    font-size: 0.8rem !important; /* 强制覆盖原字体大小 */
-    padding: 0.6rem 0.6rem !important;
-    line-height: 1.4;
-    white-space: nowrap; /* 防止按钮内容换行 */
-  
-  }
-}
-
 .prototype-btn-inside {
   display: inline-block;
   padding: 0.9rem 1.5rem;
@@ -3112,12 +3089,136 @@ video {
   color: rgb(255, 255, 255);
   transform: translateY(-2px);
 }
+
+/* 默认最大尺寸下的样式保持不变（你已经写好了） */
+
+/* =========== 适配 1512px 屏幕 =========== */
+@media (max-width: 1512px) {
+  .img-container-with-btn {
+    max-width: 100%;
+  }
+ .project{
+  max-width: 68%;
+ }
+
+  .img-overlay {
+    bottom: 140px;
+    left: 67%;
+  }
+}
+
+/* =========== 适配 1280px 屏幕 =========== */
+@media (max-width: 1280px) {
+  .img-container-with-btn {
+   
+  }
+  .project{
+    max-width: 70%;
+   }
+  .img-overlay {
+    bottom: 120px;
+    left: 68%;
+  }
+}
+
+/* =========== 适配 768px 屏幕（移动端） =========== */
+@media (max-width: 768px) {
+  .project{
+    max-width: 90%;
+  }
+  .img-container-with-btn {
+    height: auto;
+    aspect-ratio: 16 / 9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .img-overlay {
+    position: absolute;
+    bottom: 80px;
+    left: 67%;
+    transform: translateX(-50%);
+  }
+
+  .prototype-btn-inside {
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 0.7rem 1rem;
+  }
+}
+/* 适配最大宽度为1512px（14寸笔电） */
+@media (max-width: 1512px) {
+  .carousel-left {
+    flex: 0 0 400px;
+  }
+
+  .carousel-right img {
+    max-width: 100%;
+  }
+
+  .sub-title {
+    font-size: 1.8rem;
+    margin: 2rem 0;
+  }
+
+  .slide {
+    flex: 0 0 540px;
+  }
+}
+
+/* 适配最大宽度为1280px（13寸笔电） */
+@media (max-width: 1280px) {
+  .carousel-left {
+    flex: 0 0 600px;
+  }
+
+  .carousel-right img {
+    max-width: 100%;
+  }
+
+  .sub-title {
+    font-size: 1.7rem;
+    margin: 1.8rem 0;
+  }
+
+  .slide {
+    flex: 0 0 480px;
+  }
+}
+
+/* =========== 适配 480px 屏幕（移动端） =========== */
+@media (max-width: 500px) {
+  .project{
+    max-width: 90%;
+  }
+  .img-container-with-btn {
+    height: auto;
+    aspect-ratio: 16 / 9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .img-overlay {
+    position: absolute;
+    bottom: 50px;
+    left: 68%;
+    transform: translateX(-50%);
+  }
+
+  .prototype-btn-inside {
+    font-size: 0.5rem;
+    font-weight: 600;
+    padding: 0.3rem 0.5rem;
+  }
+}
+
 .carousel-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #f9f9f9;
-  gap: 0; /* 无空隙 */
+  background: #CD3F25;
   margin-top: 2rem;
 }
 .prototyping-image img{
@@ -3128,36 +3229,38 @@ video {
   flex: 0 0 599px;
   overflow: hidden;
   position: relative;
-  margin-right: 0; /* 贴近右边 */
+  margin-right: 1px; /* 贴近右边 */
 }
 
 .carousel-track {
   display: flex;
+  white-space: nowrap; /* ✅ 防止多余空格 */
+  align-items: stretch; /* ✅ 确保高度对齐 */
+  font-size: 0; /* ✅ 防止 inline 元素间空格问题 */
   animation: scrollLoop 40s linear infinite;
 }
 
 .slide {
-  flex: 0 0 600px;
+  flex: 0 0 auto;
+  width: 599px;
 }
 
 .slide img {
   width: 100%;
+  height: 100%; /* ✅ 使图片高度充满 slide */
+  object-fit: cover; /* ✅ 填满容器并裁剪溢出 */
   display: block;
-  object-fit: cover;
-
-
 }
-
 .carousel-right {
   flex: 1;
   display: flex;
   justify-content: flex-start; /* ✅ 让它贴近左边轮播 */
   align-items: center;
-  padding-left: 0;  /* ✅取消内边距 */
+
 }
 
 .carousel-right img {
-  max-width: 100%;  /* 宽度由父级控制 */
+  max-width: 473.5px;  /* 宽度由父级控制 */
   height: auto;
   display: block;
   
@@ -3168,6 +3271,114 @@ video {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-4038px); } /* 673px * 6 slides */
 }
+
+/* === 适配最大宽度 1512px（14寸屏幕） === */
+@media (max-width: 1512px) {
+  .carousel-section{
+    border-radius: 16px;
+    
+  }
+  .carousel-left {
+    flex: 0 0 560px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+  }
+ 
+  .slide {
+    width: 570px;
+    gap: 0;
+    
+  }
+
+  .carousel-right img {
+    max-width: 470px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+  .carousel-right {
+    border-left: 1px solid rgba(255, 255, 255, 0.506);
+   
+  }
+}
+
+/* === 适配最大宽度 1280px（13寸屏幕） === */
+@media (max-width: 1280px) {
+  .carousel-left {
+    flex: 0 0 490px;
+  }
+
+  .slide {
+    width: 520px;
+  }
+
+  .carousel-right img {
+    max-width: 410px;
+  }
+}
+
+/* 适配最大宽度为768px的设备（平板和小屏笔电） */
+@media (max-width: 768px) {
+  .carousel-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-left {
+    flex: 1 1 65%;
+    max-width: 65%;
+    margin: 0 auto;
+  }
+
+  .carousel-track {
+    animation: scrollLoop 30s linear infinite;
+  }
+
+  .slide {
+    flex: 0 0 100vw; /* 每张图占满视口 */
+  }
+
+  .carousel-right {
+    padding: 2rem 1rem;
+    justify-content: center;
+  }
+
+  .carousel-right img {
+    max-width: 90%;
+  }
+}
+
+/* 适配最大宽度为500px的设备（手机） */
+@media (max-width: 500px) {
+  .carousel-section {
+    padding: 1rem 0;
+    max-width: 100%;
+  }
+  .carousel-left {
+    max-width: 100%;
+    border-radius: 16px;}
+   
+.sub-title{
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1.5rem 0;
+}
+
+  .carousel-right img {
+    max-width: 100%;
+    border-radius: 16px;
+  
+   
+  }
+
+  .slide {
+    flex: 0 0 100vw;
+    max-width: 11%;
+  }
+}
+
+
+
+
 
 .paused .carousel-track {
   animation-play-state: paused;

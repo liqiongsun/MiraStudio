@@ -3525,29 +3525,37 @@ video {
   color: #c4401e;
 }
 
-.key-title {
+/* 主标题 */
+.section-title {
+  text-align: left;
   font-family: 'Halant', serif;
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 1.5rem;
+  margin-top: 0;
 }
 
-.learning-points {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto 2.5rem;
-  max-width: 800px;
+/* 每条学习总结块 */
+.learning-item {
+  text-align: left;
+  margin: 0 auto 2rem;
+  max-width: 1000px;
   font-family: 'Manrope', sans-serif;
   color: #444;
   font-size: 1.05rem;
-  line-height: 2;
+  line-height: 1.6;
 }
 
-.learning-points li {
-  margin: 0.4rem 0;
+/* 小标题 */
+.learning-title {
+  color: #c4401e;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
-.final-quote {
+/* 引用部分 */
+.key-quote {
   font-size: 1.8rem;
   font-weight: 700;
   color: #c4401e;
@@ -3555,6 +3563,7 @@ video {
   margin: 0 auto;
   font-family: 'Halant', serif;
   line-height: 1.6;
+  margin-top: 5rem;
   animation: fadeInUp 1s ease-in-out;
 }
 

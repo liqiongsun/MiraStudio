@@ -2861,11 +2861,11 @@ video {
 .sub-title {
   font-family: 'Halant', serif;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
   margin-top: 4.5rem;
   margin-bottom: 4.5rem;
-  color: #222;
+  color: #242424;
 }
 
 .c-persona {
@@ -2897,16 +2897,17 @@ video {
 
 .section-title {
   font-size: 2rem;
-  font-weight: 700;
+  color: #414141;
+  font-weight: 600;
   text-align: center;
   margin-top: 4rem;
-  margin-bottom: 1rem;
+  
   font-family: 'Halant', serif;
 }
 
 .section-intro {
   text-align: center;
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto 2.5rem;
   font-size: 1.1rem;
   color: #444;
@@ -3064,7 +3065,7 @@ video {
   justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap; /* 自动换行，适配移动端 */
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 
 .strategy-three img {
@@ -3518,21 +3519,14 @@ video {
 }
 .key-learning {
   background-color: #fbedeb;
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
   text-align: center;
   font-family: 'Merienda', serif;
   color: #c4401e;
+  margin-top: 4rem;
 }
 
-/* 主标题 */
-.section-title {
-  
-  font-family: 'Halant', serif;
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-  margin-top: 3rem;
-}
+
 
 /* 每条学习总结块 */
 .learning-item {
@@ -3563,6 +3557,7 @@ video {
   font-family: 'Halant', serif;
   line-height: 1.6;
   margin-top: 5rem;
+  margin-bottom: 5rem;
   animation: fadeInUp 1s ease-in-out;
 }
 

@@ -2865,7 +2865,7 @@ video {
   text-align: center;
   margin-top: 4.5rem;
   margin-bottom: 4.5rem;
-  color: #242424;
+  color: #414141;
 }
 
 .c-persona {
@@ -3430,7 +3430,7 @@ video {
   animation-play-state: paused;
 }
 .long-img img{
-  margin-top:2rem;
+  margin-top:4rem;
 
 }
 .key-singhts-text {
@@ -3607,34 +3607,33 @@ video {
 
 
 .key-learning {
-  background-color: #fbedeb;
+  background-color: #fdf6f0;
   padding: 2rem 2rem;
-  text-align: center;
-  font-family: 'Merienda', serif;
-  color: #c4401e;
-  margin-top: 4rem;
+  
+  margin: 0 auto;
+  border-radius: 16px;
+  color: #333;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
 }
 
 
-
-/* 每条学习总结块 */
-.learning-item {
+.key-learning ul {
+  margin: 1rem 0;
+  padding-left: 1.2rem;
   text-align: left;
-  margin: 0 auto 2rem;
-  max-width: 1000px;
-  font-family: 'Manrope', sans-serif;
-  color: #444;
-  font-size: 1.05rem;
+}
+
+.key-learning ul li {
+  margin-bottom: 0.8rem;
   line-height: 1.6;
 }
 
-/* 小标题 */
-.learning-title {
-  color: #c4401e;
+.key-learning p {
   font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+  line-height: 1.8;
+  text-align: left;
 }
+
 
 /* 引用部分 */
 .key-quote {

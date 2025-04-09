@@ -3443,7 +3443,7 @@ video {
   line-height: 1.6;
   box-shadow: 0 6px 12px rgba(0,0,0,0.05);
   font-size: 1.1rem;
-  font-family: 'Manrope', sans-serif;
+
   border: 1px solid#e5e5e5;
 
   /* 👇 动画效果 */
@@ -3455,8 +3455,8 @@ video {
 
 .key-singhts-text:hover {
   transform: scale(1.12);
-  background-color: #fff6f6;
-  border: 1px solid#c6c6c6;
+  background-color: #fcebeb;
+  border: 1px solid#d6d6d6;
 }
 .key-singhts-text ul {
   list-style: none;
@@ -3517,6 +3517,95 @@ video {
   border: 1px solid rgb(83, 83, 83);
   border-radius: 16px;
 }
+/* 🔲 Case Insights Section Layout */
+.case-insights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 3rem 1rem;
+  background-color: #fffefc;
+  font-family: 'Manrope', sans-serif;
+}
+
+/* 🧩 Individual Insight Card */
+.case-card {
+  flex: 1 1 300px;
+  max-width: 360px;
+  background-color: #fdfdfd;
+  border-radius: 16px;
+  padding: 1.8rem;
+  border: 1px solid rgb(230, 230, 230) ;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s forwards;
+}
+
+.case-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.case-card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* 🌈 Background Color Variants */
+.case-trust {
+  background-color: #fff3eb;
+}
+.case-social {
+  background-color: #eef9ff;
+}
+.case-simple {
+  background-color: #f3fdf5;
+}
+.case-trust:hover {
+  background-color: #ffe4d2;
+}
+.case-social:hover {
+  background-color: #dbf3ff;
+}
+.case-simple:hover {
+  background-color: #e8ffec;
+}
+/* 🧠 Typography */
+.case-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.6rem;
+}
+
+.case-challenge {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.8rem;
+}
+
+.case-solution {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ✨ Hover Effect */
+.case-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 🎞️ Fade-in Animation */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
 .key-learning {
   background-color: #fbedeb;
   padding: 2rem 2rem;

@@ -1639,7 +1639,7 @@ video {
   flex: 1;
   justify-content: space-between;
   
-  color: #544b43;
+  color: #423a33;
   padding: 1.2rem;
   border-radius: 14px;
   border: 1px solid #ede8dd;
@@ -3550,7 +3550,7 @@ video {
 /* 引用部分 */
 .key-quote {
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #c4401e;
   max-width: 1000px;
   margin: 0 auto;

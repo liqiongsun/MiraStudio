@@ -2835,7 +2835,7 @@ video {
 }
 
 .survey-text {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.8;
   color: #333333;
   margin-bottom: 1.8rem;
@@ -3530,9 +3530,7 @@ video {
   background-color: #fffefc;
   font-family: 'Manrope', sans-serif;
 }
-.c-strategy{
-  margin-top: 6rem;
-}
+
 /* 🧩 Individual Insight Card */
 .case-card {
   flex: 1 1 300px;

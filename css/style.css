@@ -2768,7 +2768,7 @@ video {
 #research-process{
   background-color: #f2f2f2;
   padding: 4rem 0;
-  margin: 3rem 0;
+  margin: fcase3rem 0;
 }
 .user-research {
   opacity: 0;
@@ -3524,11 +3524,15 @@ video {
   flex-wrap: wrap;
   gap: 1.5rem;
   justify-content: center;
-  padding: 3rem 1rem;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+ 
   background-color: #fffefc;
   font-family: 'Manrope', sans-serif;
 }
-
+.c-strategy{
+  margin-top: 6rem;
+}
 /* 🧩 Individual Insight Card */
 .case-card {
   flex: 1 1 300px;

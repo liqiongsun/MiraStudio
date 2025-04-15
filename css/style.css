@@ -2278,7 +2278,7 @@ video {
   max-width: 1200px;
   margin: 40px 20px auto;
   padding: 20px;
-  background-color:rgb(251, 247, 252);
+  background-color:rgb(245, 245, 245);
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(57, 28, 85, 0.1);
 }
@@ -2287,7 +2287,7 @@ video {
 .me-text {
   flex: 1;
   font-family: 'Merriweather', serif;
-  color: #4e387e;
+  color: #aeaeae;
   line-height: 1.6;
   padding-right: 20px;
   padding-left: 20px;
@@ -2298,17 +2298,17 @@ video {
   font-family: "Krub", serif;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #7a4eb2;
+  color: #9d9d9d;
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  text-shadow: 2px 2px 5px rgba(36, 36, 36, 0.1);
   animation: fadeIn 2s ease-in-out;
 }
 
 .me-text-p {
   font-size: 1.2rem;
-  color: #6a4c93;
+  color: #515151;
   margin-bottom: 15px;
 }
 
@@ -2325,31 +2325,16 @@ video {
 }
 
 .linkedin-link .icon {
-  fill: #7a4eb2;
+  fill: #ffffff;
   transition: transform 0.3s ease, fill 0.3s ease;
 }
 
 .linkedin-link .icon:hover {
   transform: scale(1.2);
-  fill: #5e3b94;
+  fill: #ffffff;
 }
 
-.resume-download {
-  background-color: #7a4eb2;
-  color: #ffffff;
-  padding: 12px 24px;
-  font-size: 1rem;
-  font-weight: 600;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
 
-.resume-download:hover {
-  background-color: #5e3b94;
-  box-shadow: 0 4px 10px rgba(122, 78, 178, 0.4);
-}
 
 /* 右侧头像区域样式 */
 .me-container {
@@ -2361,7 +2346,7 @@ video {
 
 .me {
   border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(85, 37, 131, 0.2);
+  box-shadow: 0 8px 20px rgba(123, 123, 123, 0.2);
   transition: transform 0.5s ease, box-shadow 0.5s ease;
   width: 300px;
   height: auto;
@@ -2370,7 +2355,7 @@ video {
 
 .me:hover {
   transform: scale(1.1) rotate(5deg);
-  box-shadow: 0 12px 30px rgba(85, 37, 131, 0.3);
+  box-shadow: 0 12px 30px rgba(93, 93, 93, 0.3);
 }
 /* 基础样式 */
 .email-container {
@@ -2390,7 +2375,7 @@ video {
   top: 50px; 
   left: 50%;
   transform: translateX(-50%);
-  background-color: #7500b9;
+  background-color: #464646;
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;

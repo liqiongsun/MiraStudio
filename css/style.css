@@ -2913,6 +2913,12 @@ video {
   font-size: 1.1rem;
   color: #444;
 }
+.research-findings {
+  width: 100%; /* 根据需要设置大小 */
+  border: 1px solid rgb(224, 224, 224);
+  box-shadow: 0 4px 12px rgba(104, 104, 104, 0.15); /* 阴影效果 */
+  border-radius: 12px; /* 可选：圆角边框更柔和 */
+}
 @media (max-width: 1512px) {
 .comp-card {
   padding: 1.2rem;

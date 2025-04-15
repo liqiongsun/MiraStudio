@@ -487,8 +487,8 @@ hr{
   flex-direction: row; 
   justify-content: flex-start; 
   align-items: flex-start; 
-  gap: 80px; 
-  width: 100%; 
+  gap: 180px; 
+  max-width: 100%; 
   margin-right: 0;
 }
 .project-text{
@@ -3013,7 +3013,7 @@ video {
   margin-top: 2rem;
 }
 .img-container img{
-
+  margin-top: 3rem;
   border-radius: 20px;
   
 }
@@ -3264,7 +3264,7 @@ video {
   white-space: nowrap; /* ✅ 防止多余空格 */
   align-items: stretch; /* ✅ 确保高度对齐 */
   font-size: 0; /* ✅ 防止 inline 元素间空格问题 */
-  animation: scrollLoop 40s linear infinite;
+  animation: scrollLoop 30s linear infinite;
 }
 
 .slide {
@@ -3477,7 +3477,7 @@ video {
 }
 
 .video-description {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   font-family: 'Manrope', sans-serif;
   color: #333;
@@ -3489,7 +3489,7 @@ video {
 }
 
 .video-description p {
-  max-width: 900px;
+  max-width: 1000px;
   text-align: center;
   font-size: 1.1rem;
   line-height: 1.6;

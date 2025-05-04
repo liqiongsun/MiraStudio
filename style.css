@@ -2129,14 +2129,14 @@ video {
   height: auto;
   margin: 20px auto; 
   border-radius: 8px; 
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* 图片阴影效果 */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* 平滑的动态效果 */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
-/* Hover Effect */
+
 .imges:hover {
   transform: scale(1.05); 
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2); /* 阴影更明显 */
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2); 
 }
 
 /* Flexbox Layout for Rows */
@@ -2159,17 +2159,17 @@ video {
 /* Responsive Design */
 @media (max-width: 768px) {
   .row-1 {
-    flex-wrap: wrap; /* 小屏幕时图片自动换行 */
+    flex-wrap: wrap; 
     justify-content: space-between;
   }
 
   .imges {
-    max-width: 100%; /* 小屏幕时图片占满容器宽度 */
-    margin-bottom: 15px; /* 减小图片间距 */
+    max-width: 100%; 
+    margin-bottom: 15px; 
   }
 
   .row-2 .imges {
-    max-width: 100%; /* 长图在小屏幕时也占满容器 */
+    max-width: 100%; 
   }
 }
 

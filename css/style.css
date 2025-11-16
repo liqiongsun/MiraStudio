@@ -2472,7 +2472,7 @@ video {
 }
 .left {
   color: #dee4f4;
-  width: 68%;
+  
   line-height: 1.5;
   font-weight: 300;
   font-size: 1rem;
@@ -2482,7 +2482,7 @@ video {
   margin-right: 10px;
   color: #eaf0ff;
   font-weight: 300;
-  width: 32%;
+  
   line-height: 1.5;
   font-size: 1rem;
 }
